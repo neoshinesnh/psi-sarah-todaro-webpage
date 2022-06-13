@@ -1,0 +1,17 @@
+{
+  "name": "psi-sarah-todaro-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  },
+  "scripts": {
+    "build:tailwind": "tailwindcss -i ./src/style.css -o public/style.css",
+    "watch:tailwind": "tailwindcss -i ./src/style.css -o public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
