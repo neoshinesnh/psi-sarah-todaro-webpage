@@ -904,10 +904,6 @@ video {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1071,6 +1067,10 @@ html {
     gap: 3rem;
   }
 
+  .lg\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1079,5 +1079,9 @@ html {
 @media (min-width: 1280px) {
   .xl\:gap-20 {
     gap: 5rem;
+  }
+
+  .xl\:gap-10 {
+    gap: 2.5rem;
   }
 }
