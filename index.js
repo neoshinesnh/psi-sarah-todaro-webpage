@@ -13,14 +13,18 @@ app.use('/assets', express.static('assets'));
 // Compress all HTTP responses
 app.use(compression());
 
-
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+app.get('/robots.txt', function(req, res) {
+  res.sendFile(path.join(__dirname, '/robots.txt'));
 });
 
 app.get('*', function(req, res) {
   res.redirect('/');
 });
+
 
 app.listen(port);
 console.log(`Sarah Todaro Page started on port ${port}`);
