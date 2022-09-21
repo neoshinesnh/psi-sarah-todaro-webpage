@@ -8,3 +8,11 @@ GOOGLE WEB TOOLS MASTER - https://search.google.com/search-console/welcome?utm_s
 https://rockcontent.com/br/blog/como-indexar-pagina-no-google/
 
 GOOGLE ADS
+
+
+converter em click do botão do whatsapp
+
+hotjar free?
+
+
+FORMULARIO COM PERGUNTAS, PARA REALIZAR TESTE, SE A PESSOA PRECISA DE TRATAMENTO
