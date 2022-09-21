@@ -16,3 +16,14 @@ hotjar free?
 
 
 FORMULARIO COM PERGUNTAS, PARA REALIZAR TESTE, SE A PESSOA PRECISA DE TRATAMENTO
+
+https://online.seranking.com/admin.dashboard.html
+
+SEMRUSH
+
+SEMRUSH
+sarahtodaropage@gmail.com
+saraS3WRUS#htodaropage
+
+
+https://trends.google.com.br/trends/?geo=BR
