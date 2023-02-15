@@ -1,29 +1,16 @@
- - MUDAR PARA DOMINIO DE PRODUÇÃO
-GOOGLE WEB TOOLS MASTER - https://search.google.com/search-console/welcome?utm_source=about-page
+INCLUIR NO SITE
+Primeiro,
+Você me manda mensagem no Whatsapp e marcamos um horário. Nos encontraremos semanalmente sempre nesse mesmo dia da semana e horário. 
 
->>>> https://web.dev/measure/
->>>> https://pagespeed.web.dev/
->>>>> https://support.google.com/webmasters/answer/9128669?utm_source=wnc_20079900&utm_medium=panel&utm_campaign=wnc_20079900&utm_content=msg_20079900&hl=pt-BR#zippy=%2Csou-analista-de-seo-n%C3%ADvel-avan%C3%A7ado%2Cn%C3%A3o-tenho-muito-tempo-para-gerenciar-o-site
+Logo nesse primeiro contato te passarei mais informações sobre funcionamento da terapia, formas de pagamento, tempo das sessões, etc. No dia e horário marcado nos encontraremos por chamada de vídeo para a nossa primeira sessão de terapia. 
 
-https://rockcontent.com/br/blog/como-indexar-pagina-no-google/
+Quando der o horário combinado, mando o link para você entrar na sala ou te ligo por chamada de vídeo (dependendo da plataforma escolhida). Trabalho com o Google Meet e o WhatsApp, sempre por chamada de vídeo, com câmera e microfone ligados. 
 
-GOOGLE ADS
+Dica: 
+• Caso você for participar das sessões usando o celular, escolha um lugar onde possa deixá-lo apoiado. 
+• Você pode escolher o lugar de sua preferência para participar das sessões, desde que se sinta confortável e tenha privacidade. No momento da sessão, você pode fechar a porta, combinar com outras pessoas para não entrarem no local escolhido naquele horário, etc. 
 
+Na primeira sessão alinharemos: 
+Os motivos da sua procura por terapia, o que você espera do processo terapêutico e também me aprofundo em como trabalharemos os temas que você propor. Você pode trazer os temas que quiser para serem trabalhados em terapia, sinta-se a vontade em relação a isso.
 
-converter em click do botão do whatsapp
-
-hotjar free?
-
-
-FORMULARIO COM PERGUNTAS, PARA REALIZAR TESTE, SE A PESSOA PRECISA DE TRATAMENTO
-
-https://online.seranking.com/admin.dashboard.html
-
-SEMRUSH
-
-SEMRUSH
-sarahtodaropage@gmail.com
-saraS3WRUS#htodaropage
-
-
-https://trends.google.com.br/trends/?geo=BR
+Dentro da abordagem que atuo, há uma certa organização para conseguirmos alcançar nossos objetivos. Então, haverá um plano de tratamento especializado para você.

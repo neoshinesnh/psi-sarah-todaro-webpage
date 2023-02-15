@@ -4,5 +4,74 @@
 
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 calc(50% - 20px);
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 calc(100% - 20px);
   }
+}
+
+img {
+  width: 100%;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* .carousel-item img {
+  width: 200px;
+} */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* .carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 200px;
+  margin-right: 20px;
+} */
