@@ -7,35 +7,40 @@ html {
   scroll-behavior: smooth;
 }
 
-/* @media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+/* estilos para dispositivos móveis */
   .carousel {
-    width: 100%;
-  }
-} */
-/* 
-@media (max-width: 768px) { 
-  .carousel {
-    width: 65%;
+    width: 270px;
   }
 }
 
-@media (max-width: 1024px) { 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* estilos para tablets */
   .carousel {
-    width: 60%;
+    width: 280px;
   }
 }
 
-@media (max-width: 1280px) { 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+/* estilos para tablets maiores e monitores pequenos */
   .carousel {
-    width: 50%;
+    width: 530px;
   }
 }
 
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+/* estilos para monitores de tamanho médio */
   .carousel {
-    width: 50%;
+    width: 570px;
   }
-} */
+}
+
+@media only screen and (min-width: 1201px) {
+/* estilos para televisões e monitores grandes */
+  .carousel {
+    width: 590px;
+  }
+}
 
 .carousel {
   /* width: 300px; */
