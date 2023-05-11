@@ -133,6 +133,9 @@
         <ul class="hidden sm:flex flex-1 justify-end items-center sm:gap-5 lg:gap-7 xl:gap-10 uppercase text-xs">
           <li class="cursor-pointer font-semibold"><a href="#section1">TERAPIA ONLINE</a></li>
           <li class="cursor-pointer font-semibold"><a href="#section2">PSICOTERAPIA</a></li>
+          <!-- <li class="cursor-pointer font-semibold"><a href="#section2">VALORES</a></li> -->
+          <!-- <li class="cursor-pointer font-semibold"><a href="#section3">PARA QUEM</a></li> -->
+          <!-- <li class="cursor-pointer font-semibold"><a href="#section4">LIMITAÇÕES</a></li> -->
           <li class="cursor-pointer font-semibold"><a href="#section3">FAQ</a></li>
           <li class="cursor-pointer font-semibold"><a href="#section4">DEPOIMENTOS</a></li>
         </ul>
@@ -192,85 +195,73 @@
     <!-- TERAPIA ONLINE -->
     <section id="section1" class="bg-secondary-color">
       <div class="relative">
-        <div class="flex flex-col items-center justify-center py-20 px-4" style="position: relative; background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/workspace-min.webp);  background-position: center; background-size:cover;">
+        <div class="flex flex-col lg:flex-row-reverse items-center justify-center py-20 px-4" style="position: relative; background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/workspace-min.webp);  background-position: center; background-size:cover;">
           <div class="w-80 sm:w-3/4 lg:w-5/12 mx-auto px-0">
             <h1 class="pb-2 text-3xl text-center text-white">TERAPIA ONLINE</h1>
             <p class="text-justify py-4 text-white">
               O atendimento on-line é idêntico ao presencial, a única diferença é a modalidade: Ele acontece via chamada de vídeo. As sessões são realizadas semanalmente e têm a duração de 50 minutos cada, sempre em um mesmo dia da semana e horário. Você pode trazer o tema que quiser para ser trabalhado em sessão, sinta-se a vontade em relação a isso. Logo na primeira sessão eu explicarei sobre o funcionamento das demais sessões com mais detalhes e também como trabalharemos juntos os temas que você propor.
             </p>
-          </div>
-          <div class="w-auto sm:w-auto lg:w-10/12 mx-auto py-10">
-            <div class="grid grid-cols-3 gap-3">
-              <div class="bg-secondary-color rounded-3xl text-primary p-8 mr-4">
-                <img width="40" height="48" class="pb-10 w-16 mr-2" src="./assets/icons/benefits.svg" alt="Ícone do Facebook da Sarah Todaro" />
-                <h2 class="font-medium pb-4 text-2xl text-left text-primary">BENEFÍCIOS</h2>
-                <ul class="list-disc text-left text-sm sm:text-base pl-4">
-                  <li class="pb-2">Economia de custos com transporte e tempo</li>
-                  <li class="pb-2">Praticidade e flexibilidade para o paciente</li>
-                  <li class="pb-2">Melhora na saúde mental, na qualidade de vida, nos relacionamentos, na tomada de decisões e na saúde física
-                  <li class="pb-2">Desenvolvimento pessoal</li>
-                  <li class="pb-2">Redução do estresse</li>
-                  <li class="pb-2">Maior resiliência</li>
-                  <li class="pb-2">Apoio emocional</li>
-                  <li class="pb-2">Ajuda na superação de traumas</li>
-                  <li class="">A terapia online tem os mesmos resultados, qualidade, segurança, otimização de e tempo. Alem de praticidade e flexibilidade para o paciente custos</li> 
-                </ul>
-              </div>
-              <div class="bg-secondary-color rounded-3xl text-primary p-8 mr-4">
-                <img width="40" height="48" class="pb-10 w-16 mr-2" src="./assets/icons/star.svg" alt="Ícone do Facebook da Sarah Todaro" />
-                <h2 class="font-medium pb-4 text-2xl text-left text-primary">DIFERENCIAL</h2>
-                <ul class="list-disc text-left text-sm sm:text-base pl-4">
-                  <li class="pb-2">Apesar de ser uma novidade no Brasil, países como Austrália, Estados Unidos utilizam há tempos</li>
-                  <li class="">Embora beneficie especialmente pessoas que moram em cidades pequenas ou com pouco acesso a bons profissionais, a terapia online tem se mostrado uma opção eficaz e indicada para pessoas em geral</li>
-                </ul>
-              </div>
-              <div class="bg-secondary-color rounded-3xl text-primary p-8 mr-4">
-                <img width="40" height="48" class="pb-10 w-16 mr-2" src="./assets/icons/search.svg" alt="Ícone do Facebook da Sarah Todaro" />
-                <h2 class="font-medium pb-4 text-2xl text-left text-primary">CURIOSIDADES</h2>
-                <ul class="list-disc text-left text-sm sm:text-base pl-4">
-                  <li class="pb-2">A terapia online tem se mostrado uma opção importante e eficaz no tratamento de transtornos como TOC, pânico, fobia, por serem casos em que o paciente tem dificuldades em sair de casa</li>
-                  <li class="pb-2">A expansão da psicoterapia on-line já havia sido prevista, mesmo antes da pandemia</li> 
-                  <li class="pb-2">Estudos apontam que a relação terapêutica (paciente - psicólogo) se desenvolve com a mesma  qualidade on-line</li>
-                  <li class="">O atendimento e realizado via chamada de vídeo, com câmera e microfone abertos</li> 
-                </ul>
-              </div>
+            <div class="bg-secondary-color rounded-3xl grid mt-3" style="box-shadow: 1px 1px 11px 11px rgb(65 72 86 / 5%); padding: 25px 35px; align-items: center;">
+              <ul class="list-disc text-left text-sm sm:text-base columns-2">
+                <li class="mr-10 pb-10 sm:pb-4">Apesar de ser uma novidade no Brasil, países como Austrália Estados Unidos utilizam há tempos</li>
+                <li class="mr-10 pb-10 sm:pb-4">Mesmos resultados, qualidade e segurança que o atendimento presencial proporciona</li>
+                <li class="mr-10 pb-10 sm:pb-4">Reconhecida pelo Conselho Federal de Psicologia (CFP)</li>
+                <li class="mr-10 pb-10 sm:pb-4">Melhor custo benefício (combustível, tempo de ida e volta, etc)</li>
+                <li class="mr-10 pb-10 sm:pb-4">Facilidade, praticidade e conforto</li>
+                <li class="mr-10 pb-10 sm:pb-4">Realizada via chamada de vídeo</li>
+                <li class="mr-10 pb-10 sm:pb-4">Beneficia especialmente pessoas de cidades pequenas ou com pouco acesso a bons profissionais e tem sido extremamente importante para o tratamento de casos de TOC, pânico, fobia, etc</li>
+                <li class="mr-10 pb-10 sm:pb-4">É indicada para pessoas em geral</li>
+                <li class="mr-10 pb-10 sm:pb-4">O crescimento da psicoterapia on-line já havia sido previsto, mesmo antes da pandemia</li>
+                <li class="">A relação terapêutica (paciente - psicólogo) se desenvolve com a mesma qualidade on-line</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
+    <!-- Formas de VALORES -->
+    <!-- <section id="section2" class="bg-primary-color text-secondary py-20">
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto py-20 px-10 ">
+        <h1 class="pb-2 text-3xl text-center text-white">VALORES</h1>
+        <p class="text-center mt-4">
+            O pagamento é realizado antes do inicio da sessão via PIX, transferência. Existe a possibilidade de efetuar o pagamento sessão a sessão ou através de pacotes de quatro sessões. 
+            No pacote de quatro sessões, há um desconto de 10% do valor mensal.
+        </p>
+        <p class="text-center mt-4">
+            Por convênio médico, você pode solicitar o reembolso da sessão - Caso seu convênio trabalhe com reembolsos.
+        </p>
+      </div>
+    </section> -->
 
-    <!-- Psicoterapia - Recomendação -->
-    <section id="section2" class="bg-primary-color text-secondary">
+    <!-- PARA QUEM -->
+    <!-- <section id="section3" class="bg-secondary-color text-black">
       <div class="relative">
-        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24 py-20 px-4">
-          <!-- <div class="flex flex-col lg:flex-row-reverse items-center justify-center py-20 px-4" style="position: relative; background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/bg-girl-min.webp);  background-position: center; background-size:cover;"> -->
-            <div class="sm:w-auto lg:w-3/4 mx-auto px-0">
-            <h1 class="pb-10 text-3xl text-center text-white">PSICOTERAPIA</h1>
-            <div class="grid grid-cols-2 gap-2">
-              <div class="bg-secondary-color rounded-3xl text-primary p-10 mr-4">
-                <h2 class="pb-7 text-2xl text-center text-primary">RECOMENDADO</h2>
+          <div class="flex flex-col lg:flex-row-reverse items-center justify-center py-20 px-4" style="position: relative; background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/bg-girl-min.webp);  background-position: center; background-size:cover;">
+            <div class="w-80 sm:w-3/4 lg:w-5/12 mx-auto px-0">
+              <h1 class="text-3xl text-center pb-4 text-white">PARA QUEM</h1>
+              <div class="bg-secondary-color rounded-3xl grid text-primary mt-4" style="box-shadow: 1px 1px 11px 11px rgb(65 72 86 / 5%); padding: 25px 35px; align-items: center;">
                 <ul class="list-disc text-left text-sm sm:text-base">
-                  <li class="pb-2 sm:pb-4">Pessoas que estão passando por um período de sofrimento psíquico (independente da causa) ou não estejam conseguindo lidar com o que sentem de forma saudável</li>
-                  <li class="pb-2 sm:pb-4">Têm pensamentos, comportamentos ou sentimentos indesejados</li>
-                  <li class="pb-2 sm:pb-4">Apresentem sintomas de Ansiedade, Depressão, TOC, Bipolaridade, etc (ou queiram prevenir uma recaída)</li>
-                  <li class="pb-2 sm:pb-4">Queiram trabalhar QUALQUER QUESTÃO envolvendo o seu emocional: Relacionamentos, conflitos familiares, medos, traumas, crises, autoimagem, perfeccionismo, fuga da realidade, perda do sentido da vida, lutos, vícios, mudanças, culpa, sentimentos de incapacidade, etc</li>
+                  <li class="pb-2 sm:pb-4">Pessoas que estão passando por um período de sofrimento psíquico (independente da causa) ou não estejam conseguindo lidar com o que sentem de forma saudável;</li>
+                  <li class="pb-2 sm:pb-4">Têm pensamentos, comportamentos ou sentimentos indesejados;</li>
+                  <li class="pb-2 sm:pb-4">Apresentem sintomas de Ansiedade, Depressão, TOC, Bipolaridade, etc (ou queiram prevenir uma recaída);</li>
+                  <li class="pb-2 sm:pb-4">Queiram trabalhar QUALQUER QUESTÃO envolvendo o seu emocional: Relacionamentos, conflitos familiares, medos, traumas, crises, autoimagem, perfeccionismo, fuga da realidade, perda do sentido da vida, lutos, vícios, mudanças, culpa, sentimentos de incapacidade, etc;</li>
                   <li class="pb-2 sm:pb-4">Busquem por autoconhecimento, ferramentas para autocuidado ou desenvolvimento pessoal</li>
-                  <li class="">Têm sintomas físicos sem causa médica aparente. Tais como: Insônia, falta de energia, dores no corpo, dor no peito, dificuldade de concentração ou respiração, etc</li>  
-                </ul>
-              </div>
-              <div class="bg-secondary-color rounded-3xl text-primary p-10 ml-4">
-                <h2 class="pb-7 text-2xl text-center text-primary">NÃO RECOMENDADO</h2>
-                <ul class="list-disc text-left text-sm sm:text-base">
-                  <li class="pb-2 sm:pb-4">Pessoas que querem uma solução rápida e mágica</li>
-                  <li class="pb-2 sm:pb-4">Não estão dispostas a passar pelo processo terapêutico</li>
-                  <li class="pb-2 sm:pb-4">Não acham que o resultado esperado depende do que é colocado em prática diariamente após a sessão</li>
-                  <li class="pb-2 sm:pb-4">Acham que o psicólogo deve resolver os problemas ao invés de apresentar recursos psíquicos para elas desenvolvam a capacidade de resolvê-los sozinhas</li>
-                  <li class="">Não vêem importância em cuidar da saúde mental</li>   
+                  <li class="">Têm sintomas físicos sem causa médica aparente. Tais como: Insônia, falta de energia, dores no corpo, dor no peito, dificuldade de concentração ou respiração, etc.</li>
                 </ul>
               </div>
             </div>
-            <!-- <div class="bg-secondary-color rounded-3xl grid text-primary mt-4" style="box-shadow: 1px 1px 11px 11px rgb(65 72 86 / 5%); padding: 25px 35px; align-items: center;">
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Psicoterapia não é para -->
+    <!-- <section id="section4" class="bg-primary-color text-secondary py-20">
+      <div class="relative">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <div class="sm:w-3/4 lg:w-5/12 mx-auto px-0">
+            <h1 class="pb-2 text-3xl text-center text-white">LIMITAÇÕES/DESMISTIFICANDO</h1>
+            <div class="bg-secondary-color rounded-3xl grid text-primary mt-4" style="box-shadow: 1px 1px 11px 11px rgb(65 72 86 / 5%); padding: 25px 35px; align-items: center;">
               <ul class="list-disc text-left text-sm sm:text-base">
                 <li class="pb-2 sm:pb-4">Pessoas que querem uma solução rápida e mágica</li>
                 <li class="pb-2 sm:pb-4">Não estão dispostas a passar pelo processo terapêutico</li>
@@ -278,11 +269,11 @@
                 <li class="pb-2 sm:pb-4">Acham que o psicólogo deve resolver os problemas ao invés de apresentar recursos psíquicos para elas desenvolvam a capacidade de resolvê-los sozinhas</li>
                 <li class="">Não vêem importância em cuidar da saúde mental</li>   
               </ul>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Carousel --> 
     <section id="section3" class="bg-secondary-color text-black py-20 mx-10 sm:mx-40 md:mx-36 lg:mx-80">
