@@ -623,6 +623,18 @@ video {
   height: 100%;
 }
 
+.h-\[560px\] {
+  height: 560px;
+}
+
+.h-\[580px\] {
+  height: 580px;
+}
+
+.h-\[680px\] {
+  height: 680px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1084,6 +1096,10 @@ img {
 
   .sm\:h-\[580px\] {
     height: 580px;
+  }
+
+  .sm\:h-\[600px\] {
+    height: 600px;
   }
 
   .sm\:w-16 {
