@@ -1,5 +1,5 @@
+- permitir arrastar vitrine de faq no mobile
 - padronizar font
-- montar mozaico com depoimentos do whatsapp
 - pegar imagens verdadeiras com Sarah
 - validar com Sarah o site
 - buildar tudo
