@@ -1,4 +1,5 @@
 - permitir arrastar vitrine de faq no mobile
+- afastar botoes do card para não atrapalhar a leitura
 - padronizar font
 - pegar imagens verdadeiras com Sarah
 - validar com Sarah o site
