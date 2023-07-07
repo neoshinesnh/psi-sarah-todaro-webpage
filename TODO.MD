@@ -1,7 +1,8 @@
-- arrumar topicos que estão quebrando no mobile
 - padronizar font
 - montar mozaico com depoimentos do whatsapp
 - pegar imagens verdadeiras com Sarah
 - validar com Sarah o site
 - buildar tudo
 - subir para prod
+- refinando no mobile e desktop
+- ver concorrendo do heroku
