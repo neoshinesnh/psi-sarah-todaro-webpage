@@ -1,9 +1,9 @@
 - permitir arrastar vitrine de faq no mobile
+- PERGUNTAS FREQUENTES (FAQ): AJUSTAR IMAGEM DE FUNDO
+- TRATAMENTO DE IMAGENS CONVERTENDO PARA WEBP
 - afastar botoes do card para não atrapalhar a leitura
 - padronizar font
-- pegar imagens verdadeiras com Sarah
-- validar com Sarah o site
+- refinando no mobile e desktop
 - buildar tudo
 - subir para prod
-- refinando no mobile e desktop
 - ver concorrendo do heroku
