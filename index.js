@@ -27,4 +27,5 @@ app.get('*', function(req, res) {
 
 
 app.listen(port);
-console.log(`Sarah Todaro Page started on port ${port}`);
+
+console.log(`http://localhost:${port}`)
