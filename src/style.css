@@ -84,14 +84,121 @@ img {
   font-size: 24px;
   cursor: pointer;
 }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* estilos para tablets */
+  .prev-btn {
+    left: 30px;
+    margin: 45px;
+    z-index: 1;
+  }
+  
+  .next-btn {
+    right: 30px;
+    margin: 45px;
+    z-index: 1;
+  }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* estilos para tablets maiores e monitores pequenos */
+  .prev-btn {
+    left: 30px;
+    margin: 45px;
+    z-index: 1;
+  }
+  
+  .next-btn {
+    right: 30px;
+    margin: 45px;
+    z-index: 1;
+  }
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .prev-btn {
+      left: 140px;
+      margin: 45px;
+      z-index: 1;
+    }
+    
+    .next-btn {
+      right: 140px;
+      margin: 45px;
+      z-index: 1;
+    }
+  }
+  
+  @media only screen and (min-width: 1201px) and (max-width: 1400px){
+    .prev-btn {
+      left: 210px;
+      margin: 45px;
+      z-index: 1;
+    }
+    
+    .next-btn {
+      right: 210px;
+      margin: 45px;
+      z-index: 1;
+    }
+  }
 
-.prev-btn {
-  left: 10px;
+  @media only screen and (min-width: 1401px) and (max-width: 1700px){
+      .prev-btn {
+        left: 330px;
+        margin: 45px;
+        z-index: 1;
+      }
+      
+      .next-btn {
+        right: 330px;
+        margin: 45px;
+        z-index: 1;
+      }
+  }
+
+  @media only screen and (min-width: 1701px) and (max-width: 1900px){
+      .prev-btn {
+        left: 450px;
+        margin: 45px;
+        z-index: 1;
+      }
+      
+      .next-btn {
+        right: 450px;
+        margin: 45px;
+        z-index: 1;
+      }
+  }
+  
+  @media only screen and (min-width: 1901px) and (max-width: 2100px) {
+      .prev-btn {
+        left: 550px;
+        margin: 45px;
+        z-index: 1;
+      }
+      
+      .next-btn {
+        right: 550px;
+        margin: 45px;
+        z-index: 1;
+      }
+  }
+
+  @media only screen and (min-width: 2101px) {
+    .prev-btn {
+      left: 680px;
+      margin: 45px;
+      z-index: 1;
+    }
+    
+    .next-btn {
+      right: 680px;
+      margin: 45px;
+      z-index: 1;
+    }
 }
 
-.next-btn {
-  right: 10px;
-}
 
 .prev-btn span, .next-btn span {
   margin-top: 5px;
