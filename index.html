@@ -46,6 +46,8 @@
         const carouselItems = document.querySelectorAll('.carousel-item');
         const prevBtn = document.querySelector('.prev-btn');
         const nextBtn = document.querySelector('.next-btn');
+        let touchStartX = 0;
+        let touchEndX = 0;
 
         let slideIndex = 0;
 
@@ -94,6 +96,26 @@
         carousel.addEventListener('mouseleave', startSlideShow);
 
         startSlideShow()
+
+        function handleSwipe() {
+          const swipeDistance = touchStartX - touchEndX;
+          if (Math.abs(swipeDistance) > 50) {
+            if (swipeDistance > 0) {
+              nextSlide();  
+            } else {
+              prevSlide();  
+            }
+          }
+        }
+
+        carousel.addEventListener('touchstart', (e) => {
+          touchStartX = e.touches[0].clientX;
+        });
+
+        carousel.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].clientX;
+          handleSwipe();
+        });
       }
 
     </script>
