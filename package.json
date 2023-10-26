@@ -1,6 +1,6 @@
 {
   "name": "psi-sarah-todaro-webpage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "engines": {
     "node": "18.x"
@@ -16,8 +16,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "watch": "tailwindcss -i ./src/style.css -o public/style.css --watch",
-    "build": "tailwindcss -o public/style.css --minify"
+    "watch": "tailwindcss -i ./src/style.css -o public/style-101.css --watch",
+    "build": "tailwindcss -i ./src/style.css -o public/style-101.css --minify"
   },
   "keywords": [],
   "author": "",
