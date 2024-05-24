@@ -13,7 +13,7 @@ module.exports = {
         "hero-mobile": "url('./assets/bg-header-mobile.png')",
       },
       fontFamily: {
-        'helvetica': ['Helvetica', 'Arial', 'sans'],
+        'montserrat': ['Montserrat'],
       },
       container: {
         center: true,
