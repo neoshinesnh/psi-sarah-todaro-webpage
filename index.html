@@ -41,23 +41,24 @@
         el.addEventListener('click', trackClickEvent);
 
         //FAQ
-        document.querySelectorAll('.accordion-title').forEach(button => {
-          button.addEventListener('click', () => {
-            const content = button.nextElementSibling;
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-            if (content.classList.contains('hidden')) {
-              document.querySelectorAll('.accordion-content').forEach(item => item.classList.add('hidden'));
-              content.classList.remove('hidden');
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
             } else {
-              content.classList.add('hidden');
+              panel.style.display = "block";
             }
           });
-        });
+        }
         //FAQ
       }
     </script>
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.psisarahtodaro.com.br/#organization", "name": "Psicóloga Sarah Todaro", "url": "https://www.psisarahtodaro.com.br/", "sameAs": ["https://www.instagram.com/psisarahtodaro/"], "logo": {"@type": "ImageObject", "inLanguage": "pt-BR", "@id": "https://www.psisarahtodaro.com.br/#/schema/logo/image/", "url": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "contentUrl": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "width": 1024, "height": 986, "caption": "Psicóloga Sarah Todaro"}, "image": {"@id": "https://www.psisarahtodaro.com.br/#/schema/logo/image/"} }, {"@type": "WebSite", "@id": "https://www.psisarahtodaro.com.br/#website", "url": "https://www.psisarahtodaro.com.br/", "name": "Psicóloga Sarah Todaro", "description": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online", "publisher": {"@id": "https://www.psisarahtodaro.com.br/#organization"}, "potentialAction": [{"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.psisarahtodaro.com.br/?s={search_term_string}"}, "query-input": "required name=search_term_string"} ], "inLanguage": "pt-BR"}, {"@type": "ImageObject", "inLanguage": "pt-BR", "@id": "https://www.psisarahtodaro.com.br/#primaryimage", "url": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "contentUrl": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "width": 1024, "height": 986, "caption": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online."}, {"@type": "WebPage", "@id": "https://www.psisarahtodaro.com.br/#webpage", "url": "https://www.psisarahtodaro.com.br/", "name": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online.", "isPartOf": {"@id": "https://www.psisarahtodaro.com.br/#website"}, "about": {"@id": "https://www.psisarahtodaro.com.br/#organization"}, "primaryImageOfPage": {"@id": "https://www.psisarahtodaro.com.br/#primaryimage"}, "datePublished": "2022-06-22T12:29:18+00:00", "dateModified": "2022-06-23T02:27:34+00:00", "description": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online.", "breadcrumb": {"@id": "https://www.psisarahtodaro.com.br/#breadcrumb"}, "inLanguage": "pt-BR", "potentialAction": [{"@type": "ReadAction", "target": ["https://www.psisarahtodaro.com.br/"] } ] }, {"@type": "BreadcrumbList", "@id": "https://www.psisarahtodaro.com.br/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home"} ] } ] }</script>
-    
     <link rel="stylesheet" href="./public/style-103.css">
     <title>Psi Sarah Todaro</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
@@ -235,37 +236,21 @@
 
     <!-- FAQ --> 
     <section id="section3" class="bg-secondary-color text-black">
-      <div class="pt-20 pb-10" style="position: relative; background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./assets/images/bg-faq.webp); background-size:cover;">
-        <h1 class="text-3xl text-center text-black pb-8 font-bold">PERGUNTAS FREQUENTES (FAQ)</h1>
-        <div id="faq-accordion" class="w-full max-w-2xl mx-auto">
-          <div class="accordion-item border-b">
-            <button class="accordion-title w-full text-left py-4 px-6 bg-gray-200 hover:bg-gray-300 transition flex justify-between items-center">
-              <span class="text-xl font-medium">Pergunta 1</span>
-              <span class="accordion-arrow transition-transform duration-300 material-icons">expand_more</span>
-            </button>
-            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out p-6 bg-white">
-              <p>Resposta para a Pergunta 1. Aqui você pode adicionar a descrição ou a resposta detalhada.</p>
-            </div>
-          </div>
-          <div class="accordion-item border-b">
-            <button class="accordion-title w-full text-left py-4 px-6 bg-gray-200 hover:bg-gray-300 transition flex justify-between items-center">
-              <span class="text-xl font-medium">Pergunta 2</span>
-              <span class="accordion-arrow transition-transform duration-300 material-icons">expand_more</span>
-            </button>
-            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out p-6 bg-white">
-              <p>Resposta para a Pergunta 2. Aqui você pode adicionar a descrição ou a resposta detalhada.</p>
-            </div>
-          </div>
-          <div class="accordion-item border-b">
-            <button class="accordion-title w-full text-left py-4 px-6 bg-gray-200 hover:bg-gray-300 transition flex justify-between items-center">
-              <span class="text-xl font-medium">Pergunta 3</span>
-              <span class="accordion-arrow transition-transform duration-300 material-icons">expand_more</span>
-            </button>
-            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out p-6 bg-white">
-              <p>Resposta para a Pergunta 3. Aqui você pode adicionar a descrição ou a resposta detalhada.</p>
-            </div>
-          </div>
-          <!-- Adicione mais perguntas conforme necessário -->
+      <div>
+        <h1 class="text-3xl text-center py-8">PERGUNTAS FREQUENTES (FAQ)</h1>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
     </section>
