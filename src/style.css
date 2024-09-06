@@ -213,27 +213,3 @@ img {
     }
 }
 
-
-.prev-btn span, .next-btn span {
-  margin-top: 5px;
-  font-size: 40px !important;
-}
-
-.prev-btn, .next-btn {
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border: none;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  line-height: 50px;
-  color: #000;
-}
-
-.prev-btn:hover, .next-btn:hover {
-  color: #fff;
-  background: #000;
-  cursor: pointer;
-}
