@@ -42,19 +42,19 @@
 
         //FAQ
         var acc = document.getElementsByClassName("accordion");
-var i;
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
         //FAQ
       }
     </script>
@@ -238,22 +238,50 @@ for (i = 0; i < acc.length; i++) {
     <section id="section3" class="bg-secondary-color text-black">
       <div class="text-center">
         <h1 class="text-3xl text-center py-8">PERGUNTAS FREQUENTES (FAQ)</h1>
-        <button class="accordion">Como funciona a terapia?</button>
+        <button class="accordion">
+          <span class="arrow">
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6v12z"/>
+            </svg>
+          </span>
+          Como funciona a terapia?
+        </button>
         <div class="panel">
           <p>Terapia não é uma conversa ou um simples desabafo, terapia é um plano de tratamento que tem um ou mais propósitos - Definimos metas e estratégias dentro das temáticas que você quiser trabalhar. Você pode trazer o tema que quiser para ser trabalhado em sessão, sinta-se a vontade em relação a isso. Logo na primeira sessão eu explicarei sobre o funcionamento das demais sessões com mais detalhes e também como trabalharemos juntos os temas que você propor.</p>
         </div>
         
-        <button class="accordion">Atende convênios?</button>
+        <button class="accordion">
+          <span class="arrow">
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6v12z"/>
+            </svg>
+          </span>
+          Atende convênios?
+        </button>
         <div class="panel">
           <p>Não, mas emito nota para reembolso total/ parcial do valor da terapia pelo seu convênio. Verifique se seu convênio trabalha com reembolsos.</p>
         </div>
         
-        <button class="accordion">Qual a frequência e duração das sessões?</button>
+        <button class="accordion">
+          <span class="arrow">
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6v12z"/>
+            </svg>
+          </span>
+          Qual a frequência e duração das sessões?
+        </button>
         <div class="panel">
           <p>As sessões são realizadas semanalmente e têm a duração média de 50 minutos cada. Acontecem sempre em um mesmo dia da semana e horário.</p>
         </div>
 
-        <button class="accordion">Terapia é caro?</button>
+        <button class="accordion">
+          <span class="arrow">
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6v12z"/>
+            </svg>
+          </span>
+          Terapia é caro?
+        </button>
         <div class="panel">
           <p>Para algumas pessoas, pagar xxx por sessão será visto como infinitamente mais barato que ter crises de choro, que não conseguir dormir, etc. Ao meu ver, em muitos casos, se xxx é caro ou barato, depende mais da percepção de valor sobre o tratamento do que o preço em si.
             Por exemplo, há pessoas que dizem que fazer terapia é caro mas comem fora 3x por semana, fazem compras no shopping todo final de semana e vivem em eventos/festas pagos. Nesses casos, não tem haver com condições financeiras, tem haver com percepção de valor, de importância.
