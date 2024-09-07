@@ -47,8 +47,21 @@ html {
   padding: 18px 0;
 }
 
+
 .accordion-container {
   width: 50%;
-  margin: 0 auto; /* Centraliza a div na tela */
+  margin: 0 auto; 
+}
+
+@media (max-width: 1024px) {
+  .accordion-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion-container {
+    width: 90%;
+  }
 }
 /* FAQ */
