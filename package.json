@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "dependencies": {
     "compression": "^1.7.4",
@@ -16,8 +16,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "watch": "tailwindcss -i ./src/style.css -o public/style-103.css --watch",
-    "build": "tailwindcss -i ./src/style.css -o public/style-103.css --minify"
+    "watch": "tailwindcss -i ./src/style.css -o public/style-104.css --watch",
+    "build": "tailwindcss -i ./src/style.css -o public/style-104.css --minify"
   },
   "keywords": [],
   "author": "",
