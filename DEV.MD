@@ -1,8 +1,9 @@
-- CONTEUDO ATUALIZADO
-- PRECISO DE DEPOIMENTOS ATUALIZADOS
-- ARRUMAR CARROSEL NO MOBILE
+- arrumar texto da hero session no mobile
+- logo do topo, no mobile deixar menor
+- ajustar o menu se der, deixando com 
 - ATIVAR HOTJAR
 # TOOLS
 https://developers.google.com/search/docs/advanced/structured-data
 https://web.dev/measure/
 https://pagespeed.web.dev/
+
