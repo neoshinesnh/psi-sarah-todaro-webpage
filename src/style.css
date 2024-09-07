@@ -46,4 +46,9 @@ html {
   margin: 0;
   padding: 18px 0;
 }
+
+.accordion-container {
+  width: 50%;
+  margin: 0 auto; /* Centraliza a div na tela */
+}
 /* FAQ */
