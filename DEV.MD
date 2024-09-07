@@ -1,4 +1,3 @@
-- arrumar texto da hero session no mobile
 - logo do topo, no mobile deixar menor
 - ajustar o menu se der, deixando com 
 - ATIVAR HOTJAR
