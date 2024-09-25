@@ -19,27 +19,18 @@
     <meta property="og:image:type" content="image/webp">
     <meta property="og:image:alt" content="Psicóloga Sarah Todaro">
     <meta property="og:type" content="website">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1SMBEDSZV"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16700224436">
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-Q1SMBEDSZV');
-
-      const trackClickEvent = function () {
-        if("gtag" in window) {
-          gtag('event', 'whatsapp_button_click', {
-          'event_category' : 'contacts',
-          'event_label' : 'whatsapp_contact',
-        });
-        }
-      };
+      gtag('config', 'AW-16700224436');
 
       window.onload = function(){
         const el = document.getElementById('whatsapp-button-id')
-        el.addEventListener('click', trackClickEvent);
 
         //FAQ
         var acc = document.getElementsByClassName("accordion");
