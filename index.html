@@ -30,19 +30,19 @@
       gtag('config', 'AW-16700224436');
 
       // Event snippet for Visualização de página conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. 
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-16700224436/PaaTCNOVnNIZELTnpJs-',
-            'value': 1.0,
-            'currency': 'BRL',
-            'event_callback': callback
-        });
-        return false;
+      function gtag_report_conversion(url) { 
+        var callback = function () { 
+          if (typeof(url) != 'undefined') { 
+            window.location = url; 
+          } 
+        }; 
+        gtag('event', 'conversion', { 
+          'send_to': 'AW-16700224436/PaaTCNOVnNIZELTnpJs-',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback 
+        }); 
+        return false; 
       }
       window.onload = function(){
         const el = document.getElementById('whatsapp-button-id')
