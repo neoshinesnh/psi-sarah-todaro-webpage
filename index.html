@@ -27,28 +27,29 @@
       gtag('js', new Date());
       gtag('config', 'AW-16700224436');
     </script>
-    <!-- Event snippet for Visualização de página conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
-    <script> 
-      function gtag_report_conversion(url) { 
-        var callback = function () { 
-          if (typeof(url) != 'undefined') { 
-            window.location = url; 
-          } 
-        }; 
-        gtag('event', 'conversion', { 
-          'send_to': 'AW-16700224436/PaaTCNOVnNIZELTnpJs-', 
-          'value': 1.0, 'currency': 'BRL', 
-          'event_callback': callback 
-        }); 
+    <!-- Event snippet for Outro conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16700224436/l-_qCJuomtYZELTnpJs-',
+            'event_callback': callback
+        });
 
         setTimeout(function() {
           if (typeof(url) != 'undefined') {
             window.location = url;
           }
-        }, 2000);
-        return false; 
+        }, 500);
+        return false;
       }
-    </script>
+      </script>
+  
     <script>
       window.onload = function(){
         //FAQ
