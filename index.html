@@ -46,6 +46,10 @@
       }
       window.onload = function(){
         const el = document.getElementById('whatsapp-button-id')
+        el.addEventListener('click', function(event) {
+          event.preventDefault();
+          gtag_report_conversion('https://api.whatsapp.com/send?phone=5511968513751&text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio.+');
+        });
 
         //FAQ
         var acc = document.getElementsByClassName("accordion");
@@ -140,7 +144,7 @@
                 Olá! Meu nome é <strong>Sarah</strong>, sou psicóloga (06/169190) e especialista em <strong>Terapia Cognitivo Comportamental</strong> pela PUC. Atualmente, tenho o prazer de acompanhar pacientes em <strong>+10 Estados brasileiros</strong> e estou aqui para oferecer um espaço seguro e acolhedor para você fazer terapia, de onde você estiver. Vamos agendar sua sessão? Clique no link e me mande uma mensagem!              </p>
             </div>
             <div class="relative flex items-center justify-center pt-6">
-              <a id="whatsapp-button-id" class="flex text-center text-white-color rounded-3xl bg-[#30c74b] hover:opacity-80 px-8 py-3" href="https://api.whatsapp.com/send?phone=5511968513751&text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio.+" target="_blank" onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5511968513751&text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio.+');">
+              <a id="whatsapp-button-id" class="flex text-center text-white-color rounded-3xl bg-[#30c74b] hover:opacity-80 px-8 py-3" href="#" target="_blank">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="0px"
                   viewBox="0 0 308 308" style="enable-background:new 0 0 308 308;" xml:space="preserve" class="h-6 w-6 fill-black">
                   <g id="XMLID_468_">
