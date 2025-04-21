@@ -664,10 +664,12 @@
 
         // Event listener para o botão anterior
         prevButton.addEventListener('click', () => {
-          if (currentIndex > 0) {
+          if (currentIndex <= 0) {
+            currentIndex = totalSlides - slidesPerView;
+          } else {
             currentIndex--;
-            updateCarousel();
           }
+          updateCarousel();
         });
 
         // Atualizar quando a janela for redimensionada
