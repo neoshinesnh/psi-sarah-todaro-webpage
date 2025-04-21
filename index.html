@@ -654,14 +654,12 @@
 
         // Event listener para o botão próximo
         nextButton.addEventListener('click', () => {
-          // console.log('currentIndex', currentIndex);
-          // console.log('totalSlides', totalSlides);
-          // console.log('slidesPerView', slidesPerView);
-
-          if (currentIndex < totalSlides - slidesPerView) {
+          if (currentIndex >= totalSlides - slidesPerView) {
+            currentIndex = 0;
+          } else {
             currentIndex++;
-            updateCarousel();
           }
+          updateCarousel();
         });
 
         // Event listener para o botão anterior
