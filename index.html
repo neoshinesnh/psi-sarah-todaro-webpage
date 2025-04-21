@@ -621,10 +621,12 @@
         const slides = document.querySelectorAll('.carousel-slide');
         const prevButton = document.getElementById('prevTestimonial');
         const nextButton = document.getElementById('nextTestimonial');
+        const carouselContainer = document.querySelector('.carousel-container');
         
         let currentIndex = 0;
         let slidesPerView = 1;
         const totalSlides = slides.length;
+        let autoplayInterval;
 
         // Função para atualizar o número de slides visíveis baseado no tamanho da tela
         function updateSlidesPerView() {
@@ -643,25 +645,51 @@
           track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
         }
 
-        // Event listener para o botão próximo
-        nextButton.addEventListener('click', () => {
+        // Função para avançar para o próximo slide
+        function nextSlide() {
           if (currentIndex >= totalSlides - slidesPerView) {
             currentIndex = 0;
           } else {
             currentIndex++;
           }
           updateCarousel();
-        });
+        }
 
-        // Event listener para o botão anterior
-        prevButton.addEventListener('click', () => {
+        // Função para voltar ao slide anterior
+        function prevSlide() {
           if (currentIndex <= 0) {
             currentIndex = totalSlides - slidesPerView;
           } else {
             currentIndex--;
           }
           updateCarousel();
+        }
+
+        // Função para iniciar o autoplay
+        function startAutoplay() {
+          autoplayInterval = setInterval(nextSlide, 5000); // Muda a cada 5 segundos
+        }
+
+        // Função para parar o autoplay
+        function stopAutoplay() {
+          clearInterval(autoplayInterval);
+        }
+
+        // Event listener para o botão próximo
+        nextButton.addEventListener('click', () => {
+          nextSlide();
         });
+
+        // Event listener para o botão anterior
+        prevButton.addEventListener('click', () => {
+          prevSlide();
+        });
+
+        // Event listeners para pausar o autoplay quando o mouse estiver sobre o carrossel
+        carouselContainer.addEventListener('mouseenter', stopAutoplay);
+        carouselContainer.addEventListener('mouseleave', startAutoplay);
+        carouselContainer.addEventListener('touchstart', stopAutoplay);
+        carouselContainer.addEventListener('touchend', startAutoplay);
 
         // Atualizar quando a janela for redimensionada
         window.addEventListener('resize', () => {
@@ -672,6 +700,7 @@
         // Inicializar o carrossel
         updateSlidesPerView();
         updateCarousel();
+        startAutoplay(); // Iniciar o autoplay
       });
     </script>
   </body>
