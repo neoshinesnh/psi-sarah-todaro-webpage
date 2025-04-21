@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "main": "server.js",
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "dependencies": {
     "compression": "^1.7.4",
