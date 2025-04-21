@@ -9,60 +9,41 @@ html {
 
 /* FAQ */
 .accordion {
-  background-color: #eee;
+  background-color: white;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
   outline: none;
   display: flex;
-  /* justify-content: space-between; */
-  transition: background-color 0.4s ease;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
 }
 
-.accordion .arrow {
-  transition: transform 0.4s ease;
+.accordion:hover {
+  background-color: #f8f9fa;
 }
 
-.active .arrow {
-  transform: rotate(90deg);
+.accordion .arrow svg {
+  transition: transform 0.3s ease;
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+.accordion.active .arrow svg {
+  transform: rotate(180deg);
 }
 
 .panel {
-  padding: 0 18px;
   background-color: white;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.4s ease; 
+  transition: max-height 0.3s ease-out;
 }
 
 .panel p {
-  text-align: left;
   margin: 0;
-  padding: 18px 0;
+  line-height: 1.6;
 }
 
-
-.accordion-container {
-  width: 50%;
-  margin: 0 auto; 
-}
-
-@media (max-width: 1024px) {
-  .accordion-container {
-    width: 70%;
-  }
-}
-
-@media (max-width: 767px) {
-  .accordion-container {
-    width: 90%;
-  }
-}
 /* FAQ */
 
 
