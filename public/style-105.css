@@ -1352,6 +1352,14 @@ html {
     padding-right: 0px;
   }
 
+  .md\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
