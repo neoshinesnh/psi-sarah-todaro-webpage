@@ -225,35 +225,75 @@
       <div class="relative">
         <div class="flex flex-col items-center justify-center py-20 px-4" style="position: relative; background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/bg-workspace-min.webp);  background-position: center; background-size:cover;">
           <div class="w-auto sm:w-auto md:w-3/4 lg:w-11/12 mx-auto py-10">
-            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
-              <div class="bg-secondary-color rounded-3xl text-primary p-8 mx-4 sm:mx-4 md:mr-4 lg:mr-4">
-                <img width="40" height="48" class="pb-4 sm:pb-10 w-12 sm:w-16 mr-2" src="./assets/icons/benefits.svg" alt="Ícone de Benefícios" />
-                <h2 class="font-medium pb-4 text-2xl text-left text-primary">BENEFÍCIOS</h2>
-                <ul class="list-disc text-left text-sm sm:text-base pl-4">
-                  <li class="pb-2">Melhora na saúde mental, na qualidade de vida, nos relacionamentos, na tomada de decisões e na saúde em geral.</li>
-                  <li class="pb-2">A terapia é um investimento que traz benefícios para a vida toda.</li>
-                  <li class="">A terapia capacita você a reconhecer e entender os padrões de pensamentos e comportamentos que contribuem para seus desafios emocionais.</li>
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Card Benefícios -->
+              <div class="group bg-white/95 backdrop-blur-sm rounded-3xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <div class="flex items-center mb-6">
+                  <div class="bg-primary-color/10 p-3 rounded-2xl">
+                    <img width="40" height="48" class="w-12 h-12" src="./assets/icons/benefits.svg" alt="Ícone de Benefícios" />
+                  </div>
+                  <h2 class="font-semibold text-2xl text-primary ml-4">BENEFÍCIOS</h2>
+                </div>
+                <ul class="space-y-4 text-gray-700">
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>Melhora na saúde mental, na qualidade de vida, nos relacionamentos, na tomada de decisões e na saúde em geral.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>A terapia é um investimento que traz benefícios para a vida toda.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>A terapia capacita você a reconhecer e entender os padrões de pensamentos e comportamentos que contribuem para seus desafios emocionais.</span>
+                  </li>
                 </ul>
               </div>
-              <div class="bg-secondary-color rounded-3xl text-primary p-8 mx-4 sm:mx-4 md:mr-4 lg:mr-4">
-                <img width="40" height="48" class="pb-4 sm:pb-10 w-12 sm:w-16 mr-2" src="./assets/icons/star.svg" alt="Ícone de Diferencial" />
-                <h2 class="font-medium pb-4 text-2xl text-left text-primary">DIFERENCIAL</h2>
-                <ul class="list-disc text-left text-sm sm:text-base pl-4">
-                  <li class="pb-2">A Terapia Cognitivo-Comportamental é amplamente reconhecida como a abordagem padrão-ouro no tratamento de diversos transtornos psicológicos, devido à sua eficácia comprovada por estudos científicos.</li>
-                  <li class="">Oferece estratégias práticas para identificar e trabalhar pensamentos e comportamentos disfuncionais, promovendo mudanças duradouras e melhorias na qualidade de vida.</li>
+
+              <!-- Card Diferencial -->
+              <div class="group bg-white/95 backdrop-blur-sm rounded-3xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <div class="flex items-center mb-6">
+                  <div class="bg-primary-color/10 p-3 rounded-2xl">
+                    <img width="40" height="48" class="w-12 h-12" src="./assets/icons/star.svg" alt="Ícone de Diferencial" />
+                  </div>
+                  <h2 class="font-semibold text-2xl text-primary ml-4">DIFERENCIAL</h2>
+                </div>
+                <ul class="space-y-4 text-gray-700">
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>A Terapia Cognitivo-Comportamental é amplamente reconhecida como a abordagem padrão-ouro no tratamento de diversos transtornos psicológicos, devido à sua eficácia comprovada por estudos científicos.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>Oferece estratégias práticas para identificar e trabalhar pensamentos e comportamentos disfuncionais, promovendo mudanças duradouras e melhorias na qualidade de vida.</span>
+                  </li>
                 </ul>
               </div>
-              <div class="bg-secondary-color rounded-3xl text-primary p-8 mx-4 sm:mx-4 md:mr-4 lg:mr-4">
-                <img width="40" height="48" class="pb-4 sm:pb-10 w-12 sm:w-16 mr-2" src="./assets/icons/aula-online.svg" alt="Ícone de Online" />
-                <h2 class="font-medium pb-4 text-2xl text-left text-primary">ON-LINE</h2>
-                <ul class="list-disc text-left text-sm sm:text-base pl-4">
-                  <li class="pb-2">A terapia online oferece os mesmos resultados, qualidade e segurança que a modalidade presencial, além de praticidade e economia de custos com transporte e tempo.</li>
-                  <li class="pb-2">Estudos apontam que a relação terapêutica (paciente - psicólogo) se desenvolve com a mesma qualidade on-line.</li>
-                  <li class="">Embora a terapia online seja uma "novidade" no Brasil, países como a Austrália e os Estados Unidos a utilizam há tempos. A expansão da psicoterapia online já era prevista mesmo antes da pandemia.</li>
+
+              <!-- Card Online -->
+              <div class="group bg-white/95 backdrop-blur-sm rounded-3xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <div class="flex items-center mb-6">
+                  <div class="bg-primary-color/10 p-3 rounded-2xl">
+                    <img width="40" height="48" class="w-12 h-12" src="./assets/icons/aula-online.svg" alt="Ícone de Online" />
+                  </div>
+                  <h2 class="font-semibold text-2xl text-primary ml-4">ON-LINE</h2>
+                </div>
+                <ul class="space-y-4 text-gray-700">
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>A terapia online oferece os mesmos resultados, qualidade e segurança que a modalidade presencial, além de praticidade e economia de custos com transporte e tempo.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>Estudos apontam que a relação terapêutica (paciente - psicólogo) se desenvolve com a mesma qualidade on-line.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary-color mr-2">•</span>
+                    <span>Embora a terapia online seja uma "novidade" no Brasil, países como a Austrália e os Estados Unidos a utilizam há tempos. A expansão da psicoterapia online já era prevista mesmo antes da pandemia.</span>
+                  </li>
                 </ul>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
