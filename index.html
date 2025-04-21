@@ -68,6 +68,22 @@
           });
         }
         //FAQ
+
+        // Mobile Menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let i = 0; i < mobileMenuLinks.length; i++) {
+          mobileMenuLinks[i].addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        }
       }
     </script>
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.psisarahtodaro.com.br/#organization", "name": "Psicóloga Sarah Todaro", "url": "https://www.psisarahtodaro.com.br/", "sameAs": ["https://www.instagram.com/psisarahtodaro/"], "logo": {"@type": "ImageObject", "inLanguage": "pt-BR", "@id": "https://www.psisarahtodaro.com.br/#/schema/logo/image/", "url": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "contentUrl": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "width": 1024, "height": 986, "caption": "Psicóloga Sarah Todaro"}, "image": {"@id": "https://www.psisarahtodaro.com.br/#/schema/logo/image/"} }, {"@type": "WebSite", "@id": "https://www.psisarahtodaro.com.br/#website", "url": "https://www.psisarahtodaro.com.br/", "name": "Psicóloga Sarah Todaro", "description": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online", "publisher": {"@id": "https://www.psisarahtodaro.com.br/#organization"}, "potentialAction": [{"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.psisarahtodaro.com.br/?s={search_term_string}"}, "query-input": "required name=search_term_string"} ], "inLanguage": "pt-BR"}, {"@type": "ImageObject", "inLanguage": "pt-BR", "@id": "https://www.psisarahtodaro.com.br/#primaryimage", "url": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "contentUrl": "https://www.psisarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp", "width": 1024, "height": 986, "caption": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online."}, {"@type": "WebPage", "@id": "https://www.psisarahtodaro.com.br/#webpage", "url": "https://www.psisarahtodaro.com.br/", "name": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online.", "isPartOf": {"@id": "https://www.psisarahtodaro.com.br/#website"}, "about": {"@id": "https://www.psisarahtodaro.com.br/#organization"}, "primaryImageOfPage": {"@id": "https://www.psisarahtodaro.com.br/#primaryimage"}, "datePublished": "2022-06-22T12:29:18+00:00", "dateModified": "2022-06-23T02:27:34+00:00", "description": "A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online.", "breadcrumb": {"@id": "https://www.psisarahtodaro.com.br/#breadcrumb"}, "inLanguage": "pt-BR", "potentialAction": [{"@type": "ReadAction", "target": ["https://www.psisarahtodaro.com.br/"] } ] }, {"@type": "BreadcrumbList", "@id": "https://www.psisarahtodaro.com.br/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home"} ] } ] }</script>
@@ -119,12 +135,32 @@
           </li>
         </ul>
       
-        <!-- <div class="flex sm:hidden flex-1 justify-end">
-          <i class="text-2xl fas fa-bars"></i>
-        </div> -->
+        <div class="flex sm:hidden flex-1 justify-end">
+          <button id="mobile-menu-button" class="text-primary-color">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
       </nav>
       
-      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden sm:hidden bg-secondary-color">
+        <ul class="flex flex-col items-center py-4 uppercase text-xs">
+          <li class="py-2 cursor-pointer font-semibold relative hover:border-b-2 hover:border-primary-color">
+            <a href="#section1">TERAPIA ONLINE</a>
+          </li>
+          <li class="py-2 cursor-pointer font-semibold relative hover:border-b-2 hover:border-primary-color">
+            <a href="#section2">PSICOTERAPIA</a>
+          </li>
+          <li class="py-2 cursor-pointer font-semibold relative hover:border-b-2 hover:border-primary-color">
+            <a href="#section3">FAQ</a>
+          </li>
+          <li class="py-2 cursor-pointer font-semibold relative hover:border-b-2 hover:border-primary-color">
+            <a href="#section4">DEPOIMENTOS</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Hero -->
