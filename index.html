@@ -109,6 +109,36 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <style>
+      .carousel-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: fit-content;
+      }
+      .carousel-slide {
+        flex: 0 0 100%;
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      @media (min-width: 768px) {
+        .carousel-slide {
+          flex: 0 0 33.333%;
+          width: 33.333%;
+        }
+      }
+      @media (min-width: 1024px) {
+        .carousel-slide {
+          flex: 0 0 25%;
+          width: 25%;
+        }
+      }
+    </style>
   </head>
   <body class="font-montserrat bg-white">
     <!-- Header -->
@@ -489,46 +519,70 @@
           </button>
 
           <!-- Testimonials Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
-            <!-- Testimonial Card 1 -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-              <div class="relative group">
-                <img src="./assets/images/depoimentos/0.webp" alt="Depoimento de paciente 1" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <!-- Clone do último slide no início -->
+              <div class="carousel-slide">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <div class="relative group">
+                    <img src="./assets/images/depoimentos/5.webp" alt="Depoimento de paciente 6" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <!-- Testimonial Card 2 -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-              <div class="relative group">
-                <img src="./assets/images/depoimentos/1.webp" alt="Depoimento de paciente 2" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+              <!-- Slides originais -->
+              <!-- Testimonial Card 1 -->
+              <div class="carousel-slide">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <div class="relative group">
+                    <img src="./assets/images/depoimentos/0.webp" alt="Depoimento de paciente 1" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <!-- Testimonial Card 3 -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-              <div class="relative group">
-                <img src="./assets/images/depoimentos/2.webp" alt="Depoimento de paciente 3" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+              <!-- Testimonial Card 2 -->
+              <div class="carousel-slide">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <div class="relative group">
+                    <img src="./assets/images/depoimentos/1.webp" alt="Depoimento de paciente 2" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <!-- Testimonial Card 4 -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-              <div class="relative group">
-                <img src="./assets/images/depoimentos/3.webp" alt="Depoimento de paciente 4" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+              <!-- Testimonial Card 3 -->
+              <div class="carousel-slide">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <div class="relative group">
+                    <img src="./assets/images/depoimentos/2.webp" alt="Depoimento de paciente 3" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <!-- Testimonial Card 5 -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-              <div class="relative group">
-                <img src="./assets/images/depoimentos/4.webp" alt="Depoimento de paciente 5" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+              <!-- Testimonial Card 4 -->
+              <div class="carousel-slide">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <div class="relative group">
+                    <img src="./assets/images/depoimentos/3.webp" alt="Depoimento de paciente 4" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <!-- Testimonial Card 6 -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-              <div class="relative group">
-                <img src="./assets/images/depoimentos/5.webp" alt="Depoimento de paciente 6" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+              <!-- Testimonial Card 5 -->
+              <div class="carousel-slide">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <div class="relative group">
+                    <img src="./assets/images/depoimentos/4.webp" alt="Depoimento de paciente 5" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial Card 6 -->
+              <div class="carousel-slide">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <div class="relative group">
+                    <img src="./assets/images/depoimentos/5.webp" alt="Depoimento de paciente 6" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -570,60 +624,63 @@
       </div>      
     </footer>
     <script>
-      // Testimonials Carousel
+      // Carrossel de Depoimentos
       document.addEventListener('DOMContentLoaded', function() {
-        const testimonials = document.querySelectorAll('#section4 .grid > div');
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevButton = document.getElementById('prevTestimonial');
+        const nextButton = document.getElementById('nextTestimonial');
+        
         let currentIndex = 0;
+        let slidesPerView = 1;
+        const totalSlides = slides.length;
 
-        function getItemsPerView() {
-          if (window.innerWidth >= 1024) { // Desktop
-            return 4;
-          } else if (window.innerWidth >= 768) { // Tablet
-            return 3;
-          } else { // Mobile
-            return 1;
+        // Função para atualizar o número de slides visíveis baseado no tamanho da tela
+        function updateSlidesPerView() {
+          if (window.innerWidth >= 1024) {
+            slidesPerView = 4;
+          } else if (window.innerWidth >= 768) {
+            slidesPerView = 3;
+          } else {
+            slidesPerView = 1;
           }
         }
 
-        function updateVisibility() {
-          const itemsPerView = getItemsPerView();
-          testimonials.forEach((testimonial, index) => {
-            if (index >= currentIndex && index < currentIndex + itemsPerView) {
-              testimonial.style.display = 'block';
-            } else {
-              testimonial.style.display = 'none';
-            }
-          });
+        // Função para atualizar a posição do carrossel
+        function updateCarousel() {
+          const slideWidth = track.offsetWidth / slidesPerView;
+          track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
         }
 
-        document.getElementById('nextTestimonial').addEventListener('click', () => {
-          const itemsPerView = getItemsPerView();
-          if (currentIndex + itemsPerView < testimonials.length) {
-            currentIndex += itemsPerView;
-            updateVisibility();
+        // Event listener para o botão próximo
+        nextButton.addEventListener('click', () => {
+          // console.log('currentIndex', currentIndex);
+          // console.log('totalSlides', totalSlides);
+          // console.log('slidesPerView', slidesPerView);
+
+          if (currentIndex < totalSlides - slidesPerView) {
+            currentIndex++;
+            updateCarousel();
           }
         });
 
-        document.getElementById('prevTestimonial').addEventListener('click', () => {
-          const itemsPerView = getItemsPerView();
+        // Event listener para o botão anterior
+        prevButton.addEventListener('click', () => {
           if (currentIndex > 0) {
-            currentIndex -= itemsPerView;
-            updateVisibility();
+            currentIndex--;
+            updateCarousel();
           }
         });
 
-        // Initial setup
-        updateVisibility();
-
-        // Update on window resize
-        let resizeTimeout;
+        // Atualizar quando a janela for redimensionada
         window.addEventListener('resize', () => {
-          clearTimeout(resizeTimeout);
-          resizeTimeout = setTimeout(() => {
-            currentIndex = 0;
-            updateVisibility();
-          }, 250);
+          updateSlidesPerView();
+          updateCarousel();
         });
+
+        // Inicializar o carrossel
+        updateSlidesPerView();
+        updateCarousel();
       });
     </script>
   </body>
