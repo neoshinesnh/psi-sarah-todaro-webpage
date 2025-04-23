@@ -1,5 +1,8 @@
-- logo do topo, no mobile deixar menor
-- ajustar o menu se der, deixando com 
+- na seção terapia colcoar titulo?
+- tentar ajustar foto flutuante da sarah
+- animação no menu?
+- deploy
+- passar ferramenta do google a fazer ajustes
 - ATIVAR HOTJAR
 # TOOLS
 https://developers.google.com/search/docs/advanced/structured-data
