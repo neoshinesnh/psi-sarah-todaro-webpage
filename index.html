@@ -843,35 +843,74 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="bg-gray-800 container flex items-center py-2 max-w-full">
-        <div class="flex py-1 pr-10 w-60">
-          <a href="./index.html">
-            <img width="200" height="55" src="./assets/images/sarah-logo-white-new-min.webp" alt="Psi Sarah Todaro">
-          </a>
+    <footer class="bg-gray-800 text-white">
+      <!-- Main Footer Content -->
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Logo and Description -->
+          <div class="flex flex-col items-center md:items-start">
+            <a href="./index.html" class="mb-4">
+              <img width="240" height="66" src="./assets/images/sarah-logo-white-new-min.webp" alt="Psi Sarah Todaro" class="w-48 md:w-60">
+            </a>
+            <p class="text-gray-300 text-sm text-center md:text-left">
+              Psicóloga Sarah Todaro (CRP 06/169190)<br>
+              Especialista em Terapia Cognitivo-Comportamental
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+            <ul class="space-y-2 text-center md:text-left">
+              <li><a href="#section1" class="text-gray-300 hover:text-[#a5866c] transition duration-300">Terapia Online</a></li>
+              <li><a href="#section2" class="text-gray-300 hover:text-[#a5866c] transition duration-300">Psicoterapia</a></li>
+              <li><a href="#section3" class="text-gray-300 hover:text-[#a5866c] transition duration-300">FAQ</a></li>
+              <li><a href="#section4" class="text-gray-300 hover:text-[#a5866c] transition duration-300">Depoimentos</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-lg font-semibold mb-4">Contato</h3>
+            <div class="flex space-x-4 mb-4">
+              <a href="https://api.whatsapp.com/send?phone=5511968513751&text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio.+" 
+                 target="_blank"
+                 class="hover:opacity-80 transition duration-300"
+                 onclick="return gtag_report_conversion(this.href)">
+                <img width="40" height="40" class="w-10" src="./assets/icons/whatsapp.svg" alt="WhatsApp" />
+              </a>
+              <a href="https://www.instagram.com/psisarahtodaro/" 
+                 target="_blank"
+                 class="hover:opacity-80 transition duration-300">
+                <img width="40" height="40" class="w-10" src="./assets/icons/instagram.svg" alt="Instagram" />
+              </a>
+            </div>
+            <p class="text-gray-300 text-sm text-center md:text-left">
+              Atendimento Online<br>
+              Segunda a Sexta
+            </p>
+          </div>
         </div>
-        <ul class="flex flex-1 justify-end items-center uppercase text-xs">
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=5511968513751&text=Ol%C3%A1%21+Quero+agendar+meu+hor%C3%A1rio.+" target="_blank">
-              <img width="40" height="48" class="py-2 px-1 w-10 mr-2"  src="./assets/icons/whatsapp.svg" alt="Ícone do Whatsapp da Sarah Todaro" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/psisarahtodaro/" target="_blank">
-              <img width="40" height="48" class="py-2 px-1 w-10 mr-2" src="./assets/icons/instagram.svg" alt="Ícone do Instagram da Sarah Todaro" />
-            </a>
-          </li>
-        </ul>
       </div>
-      <div class="flex flex-col items-center justify-center bg-gray-800">
-        <hr class="border-white w-11/12 mx-auto" />
-        <div class="flex items-center justify-center h-10 ">
-          <a href="https://eltonmartins.dev" target="_blank" class="flex items-center">
-            <span class="text-sm text-secondary-color ml-1">Desenvolvido por</span>
-            <img src="./assets/logo-body.svg" alt="Desenvolvido por Elton Martins" class="w-28 h-auto">
-          </a>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-gray-700">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2024 Psicóloga Sarah Todaro. Todos os direitos reservados.
+            </p>
+            <div class="flex items-center">
+              <span class="text-gray-400 text-sm mr-2">Desenvolvido por</span>
+              <a href="https://eltonmartins.dev" 
+                 target="_blank" 
+                 class="hover:opacity-80 transition duration-300">
+                <img src="./assets/logo-body.svg" alt="Desenvolvido por Elton Martins" class="h-6">
+              </a>
+            </div>
+          </div>
         </div>
-      </div>      
+      </div>
     </footer>
     <!-- Botões Flutuantes -->
     <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-50">
