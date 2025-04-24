@@ -1,6 +1,5 @@
 module.exports = {
   content: ["./*.html"],
-  safelist: ['bg-hero-sm', 'bg-hero-md', 'bg-hero-lg', 'bg-hero-xl', 'bg-hero-2xl'],
   theme: {
     extend: {
       colors: {
@@ -14,7 +13,10 @@ module.exports = {
         "hero-md": "url('./assets/images/hero-bg-md.jpg')",
         "hero-lg": "url('./assets/images/hero-bg-lg.jpg')",
         "hero-xl": "url('./assets/images/hero-bg-xl.jpg')",
-        "hero-2xl": "url('./assets/images/hero-bg-2xl.jpg')"
+        "hero-2xl": "url('./assets/images/hero-bg-2xl.jpg')",
+        "faq-gradient": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.jpg')",
+        "faq-gradient-sm": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.jpg')",
+        "faq-gradient-md": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.jpg')"
       },
       fontFamily: {
         'montserrat': ['Montserrat'],
