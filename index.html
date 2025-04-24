@@ -1043,13 +1043,19 @@
       const footer = document.querySelector('footer');
 
       function checkScroll() {
-        // Verifica se o botão deve aparecer baseado no scroll
+        const whatsappButton = floatingButtons.querySelector('a[href*="whatsapp"]');
+        
+        // Verifica se os botões devem aparecer baseado no scroll
         if (window.scrollY > 300) {
           backToTopButton.classList.remove('opacity-0', 'invisible');
           backToTopButton.classList.add('opacity-100', 'visible');
+          whatsappButton.classList.remove('opacity-0', 'invisible');
+          whatsappButton.classList.add('opacity-100', 'visible');
         } else {
           backToTopButton.classList.remove('opacity-100', 'visible');
           backToTopButton.classList.add('opacity-0', 'invisible');
+          whatsappButton.classList.remove('opacity-100', 'visible');
+          whatsappButton.classList.add('opacity-0', 'invisible');
         }
 
         // Verifica se os botões devem ser escondidos quando chegar ao footer
