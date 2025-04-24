@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./*.html"],
+  safelist: ['bg-hero-sm', 'bg-hero-md', 'bg-hero-lg', 'bg-hero-xl', 'bg-hero-2xl'],
   theme: {
     extend: {
       colors: {
@@ -9,8 +10,11 @@ module.exports = {
         "secondary": "#ffffff",
       },
       backgroundImage: {
-        "hero-desktop": "url('./assets/hero-bg.jpg')",
-        "hero-mobile": "url('./assets/bg-header-mobile.png')",
+        "hero-sm": "url('./assets/images/hero-bg-sm.jpg')",
+        "hero-md": "url('./assets/images/hero-bg-md.jpg')",
+        "hero-lg": "url('./assets/images/hero-bg-lg.jpg')",
+        "hero-xl": "url('./assets/images/hero-bg-xl.jpg')",
+        "hero-2xl": "url('./assets/images/hero-bg-2xl.jpg')"
       },
       fontFamily: {
         'montserrat': ['Montserrat'],
