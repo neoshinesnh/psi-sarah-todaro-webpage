@@ -1034,8 +1034,8 @@ video {
   background-color: rgb(255 255 255 / 0.95);
 }
 
-.bg-faq-gradient {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.jpg');
+.bg-faq-gradient-sm {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.webp');
 }
 
 .bg-gradient-to-b {
@@ -1047,11 +1047,7 @@ video {
 }
 
 .bg-hero-sm {
-  background-image: url('./assets/images/hero-bg-sm.jpg');
-}
-
-.bg-faq-gradient-sm {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.jpg');
+  background-image: url('./assets/images/hero-bg-sm.webp');
 }
 
 .from-\[\#5c7197\] {
@@ -1561,12 +1557,12 @@ html {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .sm\:bg-hero-md {
-    background-image: url('./assets/images/hero-bg-md.jpg');
+  .sm\:bg-faq-gradient-md {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.webp');
   }
 
-  .sm\:bg-faq-gradient-md {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.jpg');
+  .sm\:bg-hero-md {
+    background-image: url('./assets/images/hero-bg-md.webp');
   }
 }
 
@@ -1644,12 +1640,12 @@ html {
     justify-content: center;
   }
 
-  .md\:bg-hero-lg {
-    background-image: url('./assets/images/hero-bg-lg.jpg');
+  .md\:bg-faq-gradient {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.webp');
   }
 
-  .md\:bg-faq-gradient {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.jpg');
+  .md\:bg-hero-lg {
+    background-image: url('./assets/images/hero-bg-lg.webp');
   }
 
   .md\:px-0 {
@@ -1712,7 +1708,7 @@ html {
   }
 
   .lg\:bg-hero-xl {
-    background-image: url('./assets/images/hero-bg-xl.jpg');
+    background-image: url('./assets/images/hero-bg-xl.webp');
   }
 
   .lg\:px-20 {
@@ -1723,7 +1719,7 @@ html {
 
 @media (min-width: 1280px) {
   .xl\:bg-hero-2xl {
-    background-image: url('./assets/images/hero-bg-2xl.jpg');
+    background-image: url('./assets/images/hero-bg-2xl.webp');
   }
 
   .xl\:px-40 {
