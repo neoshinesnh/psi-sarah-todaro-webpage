@@ -1009,7 +1009,7 @@ video {
 
 .bg-primary-color {
   --tw-bg-opacity: 1;
-  background-color: rgb(33 63 111 / var(--tw-bg-opacity));
+  background-color: rgb(23 49 89 / var(--tw-bg-opacity));
 }
 
 .bg-secondary-color {
@@ -1032,6 +1032,11 @@ video {
 
 .bg-white\/95 {
   background-color: rgb(255 255 255 / 0.95);
+}
+
+.bg-\[\#718463\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 132 99 / var(--tw-bg-opacity));
 }
 
 .bg-faq-gradient-sm {
@@ -1305,7 +1310,7 @@ video {
 
 .text-primary-color {
   --tw-text-opacity: 1;
-  color: rgb(33 63 111 / var(--tw-text-opacity));
+  color: rgb(23 49 89 / var(--tw-text-opacity));
 }
 
 .text-secondary {
