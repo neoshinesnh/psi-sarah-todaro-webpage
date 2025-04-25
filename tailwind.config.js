@@ -9,14 +9,14 @@ module.exports = {
         "secondary": "#ffffff",
       },
       backgroundImage: {
-        "hero-sm": "url('./assets/images/hero-bg-sm.jpg')",
-        "hero-md": "url('./assets/images/hero-bg-md.jpg')",
-        "hero-lg": "url('./assets/images/hero-bg-lg.jpg')",
-        "hero-xl": "url('./assets/images/hero-bg-xl.jpg')",
-        "hero-2xl": "url('./assets/images/hero-bg-2xl.jpg')",
-        "faq-gradient": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.jpg')",
-        "faq-gradient-sm": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.jpg')",
-        "faq-gradient-md": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.jpg')"
+        "hero-sm": "url('./assets/images/hero-bg-sm.webp')",
+        "hero-md": "url('./assets/images/hero-bg-md.webp')",
+        "hero-lg": "url('./assets/images/hero-bg-lg.webp')",
+        "hero-xl": "url('./assets/images/hero-bg-xl.webp')",
+        "hero-2xl": "url('./assets/images/hero-bg-2xl.webp')",
+        "faq-gradient": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.webp')",
+        "faq-gradient-sm": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.webp')",
+        "faq-gradient-md": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.webp')"
       },
       fontFamily: {
         'montserrat': ['Montserrat'],

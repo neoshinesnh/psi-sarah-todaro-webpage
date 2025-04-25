@@ -1,4 +1,4 @@
-- tratar imagens para deixar otimizadas - min e webp
+- Verificar Metadados
 - passar ferramenta do google a fazer ajustes
 - ATIVAR HOTJAR
 # TOOLS
