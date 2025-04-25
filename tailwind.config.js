@@ -3,10 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-color": "#173159",
-        "secondary-color": "#ffffff",
-        "primary": "#434343",
-        "secondary": "#ffffff",
+        "my-blue": "#173159",
+        "my-gray": "#434343",
+        "my-tan": "#a5866c",
       },
       backgroundImage: {
         "hero-sm": "url('./assets/images/hero-bg-sm.webp')",
