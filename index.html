@@ -1065,9 +1065,9 @@
         // Event listeners para pausar o autoplay quando o mouse estiver sobre o carrossel
         carouselContainer.addEventListener('mouseenter', stopAutoplay);
         carouselContainer.addEventListener('mouseleave', startAutoplay);
-        carouselContainer.addEventListener('touchstart', stopAutoplay);
-        carouselContainer.addEventListener('touchmove', stopAutoplay);
-        carouselContainer.addEventListener('touchend', startAutoplay);
+        carouselContainer.addEventListener('touchstart', stopAutoplay, { passive: true });
+        carouselContainer.addEventListener('touchmove', stopAutoplay, { passive: true });
+        carouselContainer.addEventListener('touchend', startAutoplay, { passive: true });
 
         // Atualizar quando a janela for redimensionada
         window.addEventListener('resize', () => {
@@ -1117,8 +1117,8 @@
         }
       }
 
-      window.addEventListener('scroll', checkScroll);
-      window.addEventListener('resize', checkScroll);
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      window.addEventListener('resize', checkScroll, { passive: true });
 
       backToTopButton.addEventListener('click', () => {
         window.scrollTo({
