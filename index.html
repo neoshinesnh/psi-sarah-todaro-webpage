@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://static.hotjar.com">
     
+    <!-- Preload Hero Background Image -->
+    <link rel="preload" as="image" href="./public/assets/images/hero-bg-sm.webp" type="image/webp">
+    
     <!-- Primary Meta Tags -->
     <meta property="og:locale" content="pt-BR" />
     <meta name="title" content="Psicóloga Sarah Todaro">
@@ -29,7 +32,7 @@
     <meta property="og:url" content="https://www.psicologasarahtodaro.com.br/">
     <meta property="og:title" content="Psicóloga Sarah Todaro">
     <meta property="og:description" content="A Psicóloga Sarah Todaro (CRP 06/169190) oferece serviço de psicoterapia online. Aqui você tem acesso a algumas informações sobre psicoterapia, fique a vontade para entrar em contato.">
-    <meta property="og:image" content="https://www.psicologasarahtodaro.com.br/assets/images/sarah-logo-default-new-min.webp">
+    <meta property="og:image" content="https://www.psicologasarahtodaro.com.br/assets/images/sarah-logo-meta-min.png">
     <meta property="og:image:width" content="788">
     <meta property="og:image:height" content="788">
     <meta property="og:image:type" content="image/webp">
@@ -147,7 +150,7 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="./public/style-108.css">
+    <link rel="stylesheet" href="./public/style-109.css">
     <title>Psi Sarah Todaro</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
@@ -211,7 +214,7 @@
         </div>
         
         <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden lg:flex items-center space-x-8">
           <ul class="flex items-center space-x-8 uppercase text-sm">
             <li>
               <a href="#terapia-online" class="font-medium text-gray-700 hover:text-my-tan transition-colors duration-300">TERAPIA ONLINE</a>
@@ -235,7 +238,7 @@
         </div>
         
         <!-- Mobile Menu Button -->
-        <div class="md:hidden">
+        <div class="lg:hidden">
           <button 
             id="mobile-menu-button" 
             class="text-gray-700 hover:text-my-tan focus:outline-none focus:ring-2 focus:ring-my-tan focus:ring-opacity-50 rounded-lg p-2"
@@ -252,7 +255,7 @@
       <!-- Mobile Menu -->
       <div 
         id="mobile-menu" 
-        class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg"
+        class="hidden lg:hidden bg-white border-t border-gray-200 shadow-lg"
         aria-hidden="true"
       >
         <div class="px-4 py-3 space-y-1">
@@ -298,7 +301,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[80vh] md:min-h-screen flex flex-col overflow-hidden">
+    <section class="relative min-h-[80vh] md:min-h-[800px] flex flex-col overflow-hidden">
       <!-- Background Image with Overlay -->
       <div class="absolute inset-0 z-0 bg-hero-sm sm:bg-hero-md md:bg-hero-lg lg:bg-hero-xl xl:bg-hero-2xl bg-cover bg-center"> </div>
       
@@ -306,18 +309,18 @@
       <div class="container mx-auto px-4 md:pl-16 lg:px-20 xl:px-40 md:w-3/5 lg:w-7/12 relative z-10 flex-1 flex flex-col justify-between md:justify-center md:h-screen  md:items-start md:ml-0 md:mr-auto">
 
         <!-- Text Content -->
-        <div class="text-white space-y-6 text-center md:text-left px-2 pt-[10vh] md:px-0 md:pt-0">
+        <div class="text-white space-y-0 md:space-y-6 text-center md:text-left px-2 pt-[10vh] md:px-0 md:pt-0">
           <h1 class="text-2xl md:text-5xl font-bold">Viver com mais leveza, prazer e sentido - a partir de hoje</h1>             
           <div class="relative inline-block">
-            <span class="relative z-10 inline-flex items-center text-sm md:text-xl font-medium tracking-wider">
-              <span class="absolute -left-2 -right-2 h-full bg-white/95 md:bg-white/10 md:backdrop-blur-sm rounded-lg"></span>
+            <span class="relative z-10 inline-flex items-center text-sm md:text-xl font-medium tracking-wider hidden md:block">
+              <span class="absolute -left-2 -right-2 h-full bg-white/10 backdrop-blur-sm rounded-lg"></span>
               <span class="relative px-4 py-1 text-my-blue md:text-white">
                 FAÇA TERAPIA DE ONDE VOCÊ ESTIVER!
               </span>
             </span>
             <div class="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-white/50 to-transparent hidden md:block"></div>
           </div>          
-          <div class="space-y-4">
+          <div class="space-y-0 md:space-y-4">
             <p class="text-sm md:text-xl">Para quem se sente perdido, exausto ou preso em ciclos que não consegue mais sustentar. Se viver tem doído mais do que deveria, talvez seja hora de cuidar de você com acolhimento e ciência.</p>
           </div>
         </div>
@@ -494,6 +497,8 @@
             <div class="w-full md:w-1/2 relative flex justify-center">
               <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105 max-w-md w-full">
                 <img 
+                  width="1000"
+                  height="1225" 
                   src="./assets/images/sarah-about-me.webp" 
                   alt="Psicóloga Sarah Todaro" 
                   class="w-full h-auto object-cover"
@@ -706,7 +711,7 @@
                 <div class="carousel-slide">
                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <div class="relative group">
-                      <img src="./assets/images/depoimentos/0.webp" alt="Depoimento de paciente 1" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                      <img width="899" height="1599" src="./assets/images/depoimentos/0.webp" alt="Depoimento de paciente 1" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
                     </div>
                   </div>
                 </div>
@@ -715,7 +720,7 @@
                 <div class="carousel-slide">
                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <div class="relative group">
-                      <img src="./assets/images/depoimentos/1.webp" alt="Depoimento de paciente 2" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                      <img width="899" height="1599" src="./assets/images/depoimentos/1.webp" alt="Depoimento de paciente 2" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
                     </div>
                   </div>
                 </div>
@@ -724,7 +729,7 @@
                 <div class="carousel-slide">
                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <div class="relative group">
-                      <img src="./assets/images/depoimentos/2.webp" alt="Depoimento de paciente 3" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                      <img width="899" height="1599" src="./assets/images/depoimentos/2.webp" alt="Depoimento de paciente 3" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
                     </div>
                   </div>
                 </div>
@@ -733,7 +738,7 @@
                 <div class="carousel-slide">
                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <div class="relative group">
-                      <img src="./assets/images/depoimentos/3.webp" alt="Depoimento de paciente 4" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                      <img width="899" height="1599" src="./assets/images/depoimentos/3.webp" alt="Depoimento de paciente 4" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
                     </div>
                   </div>
                 </div>
@@ -742,7 +747,7 @@
                 <div class="carousel-slide">
                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <div class="relative group">
-                      <img src="./assets/images/depoimentos/4.webp" alt="Depoimento de paciente 5" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                      <img width="899" height="1599" src="./assets/images/depoimentos/4.webp" alt="Depoimento de paciente 5" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
                     </div>
                   </div>
                 </div>
@@ -751,7 +756,7 @@
                 <div class="carousel-slide">
                   <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <div class="relative group">
-                      <img src="./assets/images/depoimentos/5.webp" alt="Depoimento de paciente 6" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
+                      <img width="899" height="1599" src="./assets/images/depoimentos/5.webp" alt="Depoimento de paciente 6" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" />
                     </div>
                   </div>
                 </div>
@@ -819,10 +824,10 @@
           </p>
         </div>
         
-        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
           <!-- Instagram Post 1 -->
           <a href="https://www.instagram.com/p/DHEkxcHPYfS/" target="_blank" class="group relative overflow-hidden rounded-lg aspect-square">
-            <img src="./assets/images/instagram/post-1.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <img width="1080" height="1350" src="./assets/images/instagram/post-1.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -832,7 +837,7 @@
 
           <!-- Instagram Post 2 -->
           <a href="https://www.instagram.com/p/DFnoSFaJFhL/" target="_blank" class="group relative overflow-hidden rounded-lg aspect-square">
-            <img src="./assets/images/instagram/post-2.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <img width="1080" height="1350" src="./assets/images/instagram/post-2.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -842,7 +847,7 @@
 
           <!-- Instagram Post 3 -->
           <a href="https://www.instagram.com/p/C-5jK5dJZQz/" target="_blank" class="group relative overflow-hidden rounded-lg aspect-square">
-            <img src="./assets/images/instagram/post-3.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <img width="1080" height="1350" src="./assets/images/instagram/post-3.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -852,7 +857,7 @@
 
           <!-- Instagram Post 4 -->
           <a href="https://www.instagram.com/p/DIMmwsoJUyA/" target="_blank" class="group relative overflow-hidden rounded-lg aspect-square">
-            <img src="./assets/images/instagram/post-4.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <img width="1080" height="1350" src="./assets/images/instagram/post-4.webp" alt="Post do Instagram" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -1065,9 +1070,9 @@
         // Event listeners para pausar o autoplay quando o mouse estiver sobre o carrossel
         carouselContainer.addEventListener('mouseenter', stopAutoplay);
         carouselContainer.addEventListener('mouseleave', startAutoplay);
-        carouselContainer.addEventListener('touchstart', stopAutoplay);
-        carouselContainer.addEventListener('touchmove', stopAutoplay);
-        carouselContainer.addEventListener('touchend', startAutoplay);
+        carouselContainer.addEventListener('touchstart', stopAutoplay, { passive: true });
+        carouselContainer.addEventListener('touchmove', stopAutoplay, { passive: true });
+        carouselContainer.addEventListener('touchend', startAutoplay, { passive: true });
 
         // Atualizar quando a janela for redimensionada
         window.addEventListener('resize', () => {
@@ -1117,8 +1122,8 @@
         }
       }
 
-      window.addEventListener('scroll', checkScroll);
-      window.addEventListener('resize', checkScroll);
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      window.addEventListener('resize', checkScroll, { passive: true });
 
       backToTopButton.addEventListener('click', () => {
         window.scrollTo({
