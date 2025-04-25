@@ -710,6 +710,10 @@ video {
   margin-top: 3rem;
 }
 
+.mb-\[10vh\] {
+  margin-bottom: 10vh;
+}
+
 .block {
   display: block;
 }
