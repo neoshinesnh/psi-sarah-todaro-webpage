@@ -670,6 +670,10 @@ video {
   margin-right: auto;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -690,10 +694,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mb-\[10vh\] {
-  margin-bottom: 10vh;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -702,20 +702,20 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .mr-20 {
   margin-right: 5rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mr-40 {
+  margin-right: 10rem;
 }
 
 .block {
@@ -1183,20 +1183,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-\[10vh\] {
-  padding-top: 10vh;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-left {
@@ -1534,14 +1530,6 @@ html {
 }
 
 @media (min-width: 640px) {
-  .sm\:mr-40 {
-    margin-right: 10rem;
-  }
-
-  .sm\:mr-60 {
-    margin-right: 15rem;
-  }
-
   .sm\:mr-80 {
     margin-right: 20rem;
   }
@@ -1581,12 +1569,12 @@ html {
     margin-left: 0px;
   }
 
-  .md\:mr-auto {
-    margin-right: auto;
-  }
-
   .md\:mr-0 {
     margin-right: 0px;
+  }
+
+  .md\:mr-auto {
+    margin-right: auto;
   }
 
   .md\:block {
@@ -1662,7 +1650,7 @@ html {
   }
 
   .md\:bg-hero-lg {
-    background-image: url('./assets/images/hero-bg-lg.webp');
+    background-image: url('./assets/images/hero-bg-md.webp');
   }
 
   .md\:px-0 {
@@ -1683,16 +1671,8 @@ html {
     padding-top: 0px;
   }
 
-  .md\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:text-center {
-    text-align: center;
   }
 
   .md\:text-5xl {
@@ -1746,7 +1726,7 @@ html {
   }
 
   .lg\:bg-hero-xl {
-    background-image: url('./assets/images/hero-bg-xl.webp');
+    background-image: url('./assets/images/hero-bg-md.webp');
   }
 
   .lg\:px-20 {
@@ -1757,7 +1737,7 @@ html {
 
 @media (min-width: 1280px) {
   .xl\:bg-hero-2xl {
-    background-image: url('./assets/images/hero-bg-2xl.webp');
+    background-image: url('./assets/images/hero-bg-md.webp');
   }
 
   .xl\:px-40 {
