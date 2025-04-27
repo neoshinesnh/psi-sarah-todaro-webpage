@@ -710,14 +710,6 @@ video {
   margin-top: 3rem;
 }
 
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
-.mr-40 {
-  margin-right: 10rem;
-}
-
 .block {
   display: block;
 }
@@ -1650,7 +1642,7 @@ html {
   }
 
   .md\:bg-hero-lg {
-    background-image: url('./assets/images/hero-bg-md.webp');
+    background-image: url('./assets/images/2x1.webp');
   }
 
   .md\:px-0 {
@@ -1726,7 +1718,7 @@ html {
   }
 
   .lg\:bg-hero-xl {
-    background-image: url('./assets/images/hero-bg-md.webp');
+    background-image: url('./assets/images/2x1.webp');
   }
 
   .lg\:px-20 {
@@ -1737,7 +1729,7 @@ html {
 
 @media (min-width: 1280px) {
   .xl\:bg-hero-2xl {
-    background-image: url('./assets/images/hero-bg-md.webp');
+    background-image: url('./assets/images/2x1.webp');
   }
 
   .xl\:px-40 {
