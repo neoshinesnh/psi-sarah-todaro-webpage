@@ -8,11 +8,11 @@ module.exports = {
         "my-tan": "#a5866c",
       },
       backgroundImage: {
-        "hero-sm": "url('./assets/images/hero-bg-sm.webp')",
+        "hero-sm": "url('./assets/images/hero-bg-md.webp')",
         "hero-md": "url('./assets/images/hero-bg-md.webp')",
-        "hero-lg": "url('./assets/images/2x1.webp')",
-        "hero-xl": "url('./assets/images/2x1.webp')",
-        "hero-2xl": "url('./assets/images/2x1.webp')",
+        "hero-lg": "url('./assets/images/hero-bg-2xl.webp')",
+        "hero-xl": "url('./assets/images/hero-bg-2xl.webp')",
+        "hero-2xl": "url('./assets/images/hero-bg-2xl.webp')",
         "faq-gradient": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.webp')",
         "faq-gradient-sm": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.webp')",
         "faq-gradient-md": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.webp')"
