@@ -16,8 +16,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "watch": "tailwindcss -i ./src/style.css -o public/style-114.css --watch",
-    "build": "tailwindcss -i ./src/style.css -o public/style-114.css --minify"
+    "watch": "tailwindcss -i ./src/style.css -o public/style-115.css --watch",
+    "build": "tailwindcss -i ./src/style.css -o public/style-115.css --minify"
   },
   "keywords": [],
   "author": "",
