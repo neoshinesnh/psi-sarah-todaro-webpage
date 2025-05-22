@@ -674,6 +674,11 @@ video {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -786,6 +791,10 @@ video {
   height: 100%;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .min-h-\[80vh\] {
   min-height: 80vh;
 }
@@ -826,6 +835,10 @@ video {
   width: 100%;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -840,6 +853,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .flex-1 {
@@ -869,6 +886,10 @@ video {
 
 .list-decimal {
   list-style-type: decimal;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-1 {
@@ -1045,6 +1066,11 @@ video {
   background-color: rgb(255 255 255 / 0.95);
 }
 
+.bg-my-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 49 89 / var(--tw-bg-opacity));
+}
+
 .bg-faq-gradient-sm {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.webp');
 }
@@ -1215,6 +1241,10 @@ video {
   padding-top: 1rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1260,6 +1290,11 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1591,6 +1626,11 @@ html {
     margin-right: 0px;
   }
 
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1619,6 +1659,10 @@ html {
     height: 100vh;
   }
 
+  .md\:h-32 {
+    height: 8rem;
+  }
+
   .md\:min-h-\[800px\] {
     min-height: 800px;
   }
@@ -1637,6 +1681,10 @@ html {
 
   .md\:w-60 {
     width: 15rem;
+  }
+
+  .md\:w-0\.5 {
+    width: 0.125rem;
   }
 
   .md\:grid-cols-2 {
@@ -1661,6 +1709,10 @@ html {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1718,6 +1770,11 @@ html {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:leading-tight {
