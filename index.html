@@ -269,6 +269,77 @@
           width: 25%;
         }
       }
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: #e0e0e0;
+        transform: translateX(-50%);
+      }
+
+      .timeline-step {
+        position: relative;
+        margin: 2rem 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      .timeline-step:nth-child(even) {
+        padding-left: 4rem;
+        padding-right: 1rem;
+      }
+
+      .timeline-step:nth-child(odd) {
+        padding-left: 1rem;
+        padding-right: 4rem;
+      }
+
+      .timeline-dot {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background: #5c7197;
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%, -50%);
+      }
+
+      @media (max-width: 768px) {
+        .timeline {
+          padding: 0;
+        }
+
+        .timeline-step {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .timeline-step:nth-child(even) {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .timeline-step:nth-child(odd) {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
     </style>
   </head>
   <body class="font-montserrat bg-white">
@@ -698,7 +769,6 @@
         </div>
       </div>
     </section>
-
     <!-- Linha do Tempo Terapia -->
     <section id="linha-do-tempo-terapia" class="relative bg-white py-20">
       <!-- Background Image -->
@@ -719,18 +789,10 @@
             O tratamento é estruturado da seguinte forma:
           </p>
         </div>
-        <div
-          class="flex flex-col md:flex-row md:items-start md:justify-between gap-8 max-w-5xl mx-auto"
-        >
+        <div class="timeline mx-auto">
           <!-- Etapa 1 -->
-          <div
-            class="flex-1 flex flex-col items-center text-center md:text-left timeline-step"
-          >
-            <div
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-my-blue text-white text-2xl font-bold mb-4"
-            >
-              1
-            </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">1</div>
             <h3 class="font-semibold text-xl mb-2 text-my-blue">
               Entendemos a raiz do problema
             </h3>
@@ -739,19 +801,9 @@
               plano personalizado para você.
             </p>
           </div>
-          <!-- Linha vertical/horizontal -->
-          <div
-            class="hidden md:block w-2 h-32 bg-my-tan rounded-full mx-4 md:my-0 my-4 md:w-0.5 md:h-32"
-          ></div>
           <!-- Etapa 2 -->
-          <div
-            class="flex-1 flex flex-col items-center text-center md:text-left timeline-step"
-          >
-            <div
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-my-blue text-white text-2xl font-bold mb-4"
-            >
-              2
-            </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">2</div>
             <h3 class="font-semibold text-xl mb-2 text-my-blue">
               Definimos metas que fazem sentido pra SUA vida
             </h3>
@@ -760,18 +812,9 @@
               que você deseja viver.
             </p>
           </div>
-          <div
-            class="hidden md:block w-2 h-32 bg-my-tan rounded-full mx-4 md:my-0 my-4 md:w-0.5 md:h-32"
-          ></div>
           <!-- Etapa 3 -->
-          <div
-            class="flex-1 flex flex-col items-center text-center md:text-left timeline-step"
-          >
-            <div
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-my-blue text-white text-2xl font-bold mb-4"
-            >
-              3
-            </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">3</div>
             <h3 class="font-semibold text-xl mb-2 text-my-blue">
               Caminhamos com clareza e foco em resultados
             </h3>
@@ -780,18 +823,9 @@
               e cuidado — para sair do lugar sem se perder de si.
             </p>
           </div>
-          <div
-            class="hidden md:block w-2 h-32 bg-my-tan rounded-full mx-4 md:my-0 my-4 md:w-0.5 md:h-32"
-          ></div>
           <!-- Etapa 4 -->
-          <div
-            class="flex-1 flex flex-col items-center text-center md:text-left timeline-step"
-          >
-            <div
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-my-blue text-white text-2xl font-bold mb-4"
-            >
-              4
-            </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">4</div>
             <h3 class="font-semibold text-xl mb-2 text-my-blue">
               Alta/Finalização
             </h3>
