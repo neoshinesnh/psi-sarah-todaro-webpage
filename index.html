@@ -541,7 +541,7 @@
                 />
               </g>
             </svg>
-            Agende sua Sessão
+            Agendar Sessão
           </a>
         </div>
       </div>
@@ -700,10 +700,19 @@
     </section>
 
     <!-- Linha do Tempo Terapia -->
-    <section id="linha-do-tempo-terapia" class="bg-white py-20">
-      <div class="container mx-auto px-4">
+    <section id="linha-do-tempo-terapia" class="relative bg-white py-20">
+      <!-- Background Image -->
+      <div class="absolute inset-0 w-full h-full z-0">
+        <img
+          src="./assets/images/bg-workspace-min.webp"
+          alt="Background Terapia"
+          class="w-full h-full object-cover opacity-10"
+          loading="lazy"
+        />
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-my-blue mb-4">
+          <h2 class="text-3xl md:text-4xl text-my-blue mb-4">
             Terapia é um investimento com benefícios para a vida toda!
           </h2>
           <p class="text-lg md:text-xl text-my-tan font-medium mb-2">
@@ -1157,12 +1166,7 @@
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 19l-7-7 7-7"
-                />
+                <path d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
@@ -1176,12 +1180,7 @@
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
+                <path d="M9 5l7 7-7 7" />
               </svg>
             </button>
 
