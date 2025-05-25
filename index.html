@@ -240,107 +240,6 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <style>
-      .carousel-container {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-      }
-      .carousel-track {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        width: fit-content;
-      }
-      .carousel-slide {
-        flex: 0 0 100%;
-        padding: 0 1rem;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      @media (min-width: 768px) {
-        .carousel-slide {
-          flex: 0 0 33.333%;
-          width: 33.333%;
-        }
-      }
-      @media (min-width: 1024px) {
-        .carousel-slide {
-          flex: 0 0 25%;
-          width: 25%;
-        }
-      }
-      .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-
-      .timeline::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 2px;
-        height: 100%;
-        background: #e0e0e0;
-        transform: translateX(-50%);
-      }
-
-      .timeline-step {
-        position: relative;
-        margin: 2rem 0;
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-
-      .timeline-step:nth-child(even) {
-        padding-left: 4rem;
-        padding-right: 1rem;
-      }
-
-      .timeline-step:nth-child(odd) {
-        padding-left: 1rem;
-        padding-right: 4rem;
-      }
-
-      .timeline-dot {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        background: #5c7197;
-        border-radius: 50%;
-        color: white;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translate(-50%, -50%);
-      }
-
-      @media (max-width: 768px) {
-        .timeline {
-          padding: 0;
-        }
-
-        .timeline-step {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-
-        .timeline-step:nth-child(even) {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-
-        .timeline-step:nth-child(odd) {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-      }
-    </style>
   </head>
   <body class="font-montserrat bg-white">
     <!-- Header -->
@@ -837,9 +736,9 @@
         </div>
         <div class="timeline mx-auto">
           <!-- Etapa 1 -->
-          <div class="timeline-step">
-            <div class="timeline-dot">1</div>
-            <h3 class="font-semibold text-xl mb-2 text-my-blue">
+          <div class="timeline-step rounded-2xl bg-my-blue/20">
+            <div class="timeline-dot bg-my-blue">1</div>
+            <h3 class="font-semibold text-xl mb-2 text-my-gray">
               Entendemos a raiz do problema
             </h3>
             <p class="text-gray-700">
@@ -848,9 +747,9 @@
             </p>
           </div>
           <!-- Etapa 2 -->
-          <div class="timeline-step">
-            <div class="timeline-dot">2</div>
-            <h3 class="font-semibold text-xl mb-2 text-my-blue">
+          <div class="timeline-step rounded-2xl bg-my-olive/20">
+            <div class="timeline-dot bg-my-olive">2</div>
+            <h3 class="font-semibold text-xl mb-2 text-my-gray">
               Definimos metas que fazem sentido pra SUA vida
             </h3>
             <p class="text-gray-700">
@@ -859,9 +758,9 @@
             </p>
           </div>
           <!-- Etapa 3 -->
-          <div class="timeline-step">
-            <div class="timeline-dot">3</div>
-            <h3 class="font-semibold text-xl mb-2 text-my-blue">
+          <div class="timeline-step rounded-2xl bg-my-tan/20">
+            <div class="timeline-dot bg-my-tan">3</div>
+            <h3 class="font-semibold text-xl mb-2 text-my-gray">
               Caminhamos com clareza e foco em resultados
             </h3>
             <p class="text-gray-700">
@@ -870,9 +769,9 @@
             </p>
           </div>
           <!-- Etapa 4 -->
-          <div class="timeline-step">
-            <div class="timeline-dot">4</div>
-            <h3 class="font-semibold text-xl mb-2 text-my-blue">
+          <div class="timeline-step rounded-2xl bg-my-blue/20">
+            <div class="timeline-dot bg-my-blue">4</div>
+            <h3 class="font-semibold text-xl mb-2 text-my-gray">
               Alta/Finalização
             </h3>
             <p class="text-gray-700">

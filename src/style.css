@@ -54,6 +54,7 @@ html {
   max-width: 900px;
 }
 .timeline::before {
+  @apply bg-my-gray;
   content: "";
   position: absolute;
   top: 0;
@@ -61,7 +62,6 @@ html {
   transform: translateX(-50%);
   width: 4px;
   height: 100%;
-  background: #e2c9b0; /* my-tan */
   z-index: 0;
 }
 .timeline-step {
@@ -73,6 +73,7 @@ html {
   align-items: flex-end;
   justify-content: flex-start;
   padding: 2rem 2rem 2rem 0;
+  margin: 2rem 0;
   text-align: right;
 }
 .timeline-step:nth-child(even) {
@@ -88,7 +89,6 @@ html {
   transform: translate(-50%, 0);
   width: 2.5rem;
   height: 2.5rem;
-  background: #1e3a8a; /* my-blue */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -103,7 +103,22 @@ html {
   right: auto;
   transform: translate(-50%, 0);
 }
+
+.timeline-step:nth-child(even) {
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
+
+.timeline-step:nth-child(odd) {
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
 @media (max-width: 768px) {
+  .timeline {
+    padding: 0;
+  }
+
   .timeline::before {
     left: 20px;
     transform: none;
@@ -121,5 +136,34 @@ html {
     left: 20px;
     right: auto;
     transform: none;
+  }
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: fit-content;
+}
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 33.333%;
+    width: 33.333%;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-slide {
+    flex: 0 0 25%;
+    width: 25%;
   }
 }
