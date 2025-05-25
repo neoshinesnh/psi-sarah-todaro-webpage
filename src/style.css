@@ -51,7 +51,7 @@ html {
   margin: 0 auto;
   padding: 2rem 0;
   width: 100%;
-  max-width: 900px;
+  max-width: 750px;
 }
 .timeline::before {
   @apply bg-my-gray;
@@ -60,7 +60,7 @@ html {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 4px;
+  width: 3px;
   height: 100%;
   z-index: 0;
 }
@@ -73,7 +73,7 @@ html {
   align-items: flex-end;
   justify-content: flex-start;
   padding: 2rem 2rem 2rem 0;
-  margin: 2rem 0;
+  margin: 5rem 0;
   text-align: right;
 }
 .timeline-step:nth-child(even) {

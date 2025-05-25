@@ -1023,9 +1023,13 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-my-gray {
+.bg-my-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(67 67 67 / var(--tw-bg-opacity));
+  background-color: rgb(23 49 89 / var(--tw-bg-opacity));
+}
+
+.bg-my-blue\/20 {
+  background-color: rgb(23 49 89 / 0.2);
 }
 
 .bg-my-olive {
@@ -1040,6 +1044,10 @@ video {
 .bg-my-tan {
   --tw-bg-opacity: 1;
   background-color: rgb(165 134 108 / var(--tw-bg-opacity));
+}
+
+.bg-my-tan\/20 {
+  background-color: rgb(165 134 108 / 0.2);
 }
 
 .bg-white {
@@ -1057,19 +1065,6 @@ video {
 
 .bg-white\/95 {
   background-color: rgb(255 255 255 / 0.95);
-}
-
-.bg-my-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 49 89 / var(--tw-bg-opacity));
-}
-
-.bg-my-blue\/20 {
-  background-color: rgb(23 49 89 / 0.2);
-}
-
-.bg-my-tan\/20 {
-  background-color: rgb(165 134 108 / 0.2);
 }
 
 .bg-faq-gradient-sm {
@@ -1228,6 +1223,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-left {
@@ -1477,7 +1476,7 @@ html {
   margin: 0 auto;
   padding: 2rem 0;
   width: 100%;
-  max-width: 900px;
+  max-width: 750px;
 }
 
 .timeline::before {
@@ -1488,7 +1487,7 @@ html {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 4px;
+  width: 3px;
   height: 100%;
   z-index: 0;
 }
@@ -1502,7 +1501,7 @@ html {
   align-items: flex-end;
   justify-content: flex-start;
   padding: 2rem 2rem 2rem 0;
-  margin: 2rem 0;
+  margin: 5rem 0;
   text-align: right;
 }
 
