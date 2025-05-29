@@ -1501,22 +1501,42 @@ html {
   align-items: flex-end;
   justify-content: flex-start;
   padding: 2rem 2rem 2rem 0;
-  margin: 5rem 0;
+  margin: 5rem 0 0 0;
   text-align: right;
 }
 
-.timeline-step:nth-child(even) {
-  left: 50%;
+.timeline-step:nth-child(4n + 1),
+.timeline-step:nth-child(4n + 2) {
+  margin-right: 50%;
+  padding-right: 3rem;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.timeline-step:nth-child(4n + 3),
+.timeline-step:nth-child(4n + 4) {
+  margin-left: 50%;
+  padding-left: 3rem;
   align-items: flex-start;
-  padding: 2rem 0 2rem 2rem;
   text-align: left;
 }
 
-.timeline-step .timeline-dot {
+.timeline-step:nth-child(4n + 1) + .timeline-dot,
+.timeline-step:nth-child(4n + 2) + .timeline-dot {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -8rem;
+}
+
+.timeline-step:nth-child(4n + 3) + .timeline-dot,
+.timeline-step:nth-child(4n + 4) + .timeline-dot {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -8rem;
+}
+
+.timeline-dot {
   position: absolute;
-  top: 2rem;
-  left: 100%;
-  transform: translate(-50%, 0);
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -1527,22 +1547,6 @@ html {
   font-weight: bold;
   font-size: 1.5rem;
   z-index: 2;
-}
-
-.timeline-step:nth-child(even) .timeline-dot {
-  left: 0%;
-  right: auto;
-  transform: translate(-50%, 0);
-}
-
-.timeline-step:nth-child(even) {
-  padding-left: 4rem;
-  padding-right: 1rem;
-}
-
-.timeline-step:nth-child(odd) {
-  padding-left: 1rem;
-  padding-right: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -1556,19 +1560,28 @@ html {
   }
 
   .timeline-step,
-  .timeline-step:nth-child(even) {
-    width: 100%;
+  .timeline-step:nth-child(4n + 1),
+  .timeline-step:nth-child(4n + 2),
+  .timeline-step:nth-child(4n + 3),
+  .timeline-step:nth-child(4n + 4) {
+    width: 80%;
     left: 0;
+    margin-left: auto;
+    margin-right: 0;
     align-items: flex-start;
-    padding: 2rem 0 2rem 3rem;
+    padding: 2rem 1rem 2rem 1rem;
     text-align: left;
+    margin-top: 3rem;
   }
 
-  .timeline-step .timeline-dot,
-  .timeline-step:nth-child(even) .timeline-dot {
-    left: 20px;
-    right: auto;
+  .timeline-dot,
+  .timeline-step:nth-child(4n + 1) + .timeline-dot,
+  .timeline-step:nth-child(4n + 2) + .timeline-dot,
+  .timeline-step:nth-child(4n + 3) + .timeline-dot,
+  .timeline-step:nth-child(4n + 4) + .timeline-dot {
+    left: 1px;
     transform: none;
+    margin-top: -9rem;
   }
 }
 
@@ -1864,11 +1877,6 @@ html {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:leading-tight {
