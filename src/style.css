@@ -54,7 +54,7 @@ html {
   max-width: 750px;
 }
 .timeline::before {
-  @apply bg-my-gray;
+  @apply bg-my-blue;
   content: "";
   position: absolute;
   top: 0;
