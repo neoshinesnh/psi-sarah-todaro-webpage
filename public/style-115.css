@@ -1619,6 +1619,25 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  .mobile-benefit-text {
+    display: block;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.75rem;
+  }
+
+  .space-y-2 > li:last-child .mobile-benefit-text {
+    border-bottom: none;
+  }
+
+  .space-y-2 > li {
+    margin: 0.75rem 0;
+  }
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1767,6 +1786,10 @@ html {
 
   .md\:inline-block {
     display: inline-block;
+  }
+
+  .md\:inline {
+    display: inline;
   }
 
   .md\:h-screen {
