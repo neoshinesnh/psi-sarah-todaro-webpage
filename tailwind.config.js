@@ -6,6 +6,7 @@ module.exports = {
         "my-blue": "#173159",
         "my-gray": "#434343",
         "my-tan": "#a5866c",
+        "my-olive": "#798a69",
       },
       backgroundImage: {
         "hero-sm": "url('./assets/images/hero-bg-md.webp')",
@@ -13,31 +14,33 @@ module.exports = {
         "hero-lg": "url('./assets/images/hero-bg-2xl.webp')",
         "hero-xl": "url('./assets/images/hero-bg-2xl.webp')",
         "hero-2xl": "url('./assets/images/hero-bg-2xl.webp')",
-        "faq-gradient": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.webp')",
-        "faq-gradient-sm": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.webp')",
-        "faq-gradient-md": "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.webp')"
+        "faq-gradient":
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq.webp')",
+        "faq-gradient-sm":
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-sm.webp')",
+        "faq-gradient-md":
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/sarah-faq-md.webp')",
       },
       fontFamily: {
-        'montserrat': ['Montserrat'],
+        montserrat: ["Montserrat"],
       },
       container: {
         center: true,
-        padding: '1rem',
+        padding: "1rem",
         screens: {
           lg: "1440px",
           xl: "1440px",
           "2xl": "1440px",
-        }
-      }
+        },
+      },
     },
     screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',    
-    }
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
   },
   plugins: [],
-}
-
+};

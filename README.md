@@ -16,21 +16,25 @@ O site foi desenvolvido para proporcionar uma experiência eficiente e acessíve
 Siga os passos abaixo para rodar o projeto localmente:
 
 1. Clone o repositório:
+
    ```bash
    git clone git@github.com:neoshinesnh/psi-sarah-todaro-webpage.git
    ```
 
 2. Acesse o diretório do projeto:
+
    ```bash
    cd psi-sarah-todaro-webpage
    ```
 
 3. Instale as dependências:
+
    ```bash
    npm install
    ```
 
 4. Inicie o servidor localmente:
+
    ```bash
    npm run dev
    ```
@@ -52,7 +56,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 ```
 /public
    /assets - Arquivos estáticos (imagens, etc)
-   /style-115.css - Arquivo de estilo gerado pelo Tailwind
+   /style-116.css - Arquivo de estilo gerado pelo Tailwind
 /src
    /style.css - Arquivo de estilo de entrada para Tailwind
 /index.html - Página principal do site

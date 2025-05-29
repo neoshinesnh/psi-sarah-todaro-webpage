@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -46,4 +45,155 @@ html {
 
 /* FAQ */
 
+/* Linha do Tempo Terapia */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 750px;
+}
+.timeline::before {
+  @apply bg-my-gray;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  z-index: 0;
+}
+.timeline-step {
+  position: relative;
+  width: 50%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 5rem 0 0 0;
+  text-align: right;
+}
+.timeline-step:nth-child(4n + 1),
+.timeline-step:nth-child(4n + 2) {
+  margin-right: 50%;
+  padding-right: 3rem;
+  align-items: flex-end;
+  text-align: right;
+}
+.timeline-step:nth-child(4n + 3),
+.timeline-step:nth-child(4n + 4) {
+  margin-left: 50%;
+  padding-left: 3rem;
+  align-items: flex-start;
+  text-align: left;
+}
+.timeline-step:nth-child(4n + 1) + .timeline-dot,
+.timeline-step:nth-child(4n + 2) + .timeline-dot {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -8rem;
+}
+.timeline-step:nth-child(4n + 3) + .timeline-dot,
+.timeline-step:nth-child(4n + 4) + .timeline-dot {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -8rem;
+}
+.timeline-dot {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 2;
+}
 
+@media (max-width: 768px) {
+  .timeline {
+    padding: 0;
+  }
+
+  .timeline::before {
+    left: 20px;
+    transform: none;
+  }
+  .timeline-step,
+  .timeline-step:nth-child(4n + 1),
+  .timeline-step:nth-child(4n + 2),
+  .timeline-step:nth-child(4n + 3),
+  .timeline-step:nth-child(4n + 4) {
+    width: 80%;
+    left: 0;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: flex-start;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: left;
+    margin-top: 3rem;
+  }
+  .timeline-dot,
+  .timeline-step:nth-child(4n + 1) + .timeline-dot,
+  .timeline-step:nth-child(4n + 2) + .timeline-dot,
+  .timeline-step:nth-child(4n + 3) + .timeline-dot,
+  .timeline-step:nth-child(4n + 4) + .timeline-dot {
+    left: 1px;
+    transform: none;
+    margin-top: -9rem;
+  }
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: fit-content;
+}
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 33.333%;
+    width: 33.333%;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-slide {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-benefit-text {
+    display: block;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.75rem;
+  }
+
+  .space-y-2 > li:last-child .mobile-benefit-text {
+    border-bottom: none;
+  }
+
+  .space-y-2 > li {
+    margin: 0.75rem 0;
+  }
+}
