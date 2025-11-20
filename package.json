@@ -5,8 +5,8 @@
     "tailwindcss": "^3.4.10"
   },
   "scripts": {
-    "watch": "tailwindcss -i ./src/style.css -o public/style-122.css --watch",
-    "build": "tailwindcss -i ./src/style.css -o public/style-122.css --minify"
+    "watch": "tailwindcss -i ./src/style.css -o public/style-123.css --watch",
+    "build": "tailwindcss -i ./src/style.css -o public/style-123.css --minify"
   },
   "keywords": [],
   "author": "",
