@@ -15,7 +15,7 @@
     <link
       rel="preload"
       as="image"
-      href="./public/assets/images/hero-bg-sm.webp"
+      href="./assets/images/hero-bg-md.webp"
       type="image/webp"
     />
 
@@ -149,55 +149,67 @@
         const mobileMenuButton = document.getElementById("mobile-menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
 
-        // Toggle mobile menu
-        mobileMenuButton.addEventListener("click", () => {
-          const isExpanded =
-            mobileMenuButton.getAttribute("aria-expanded") === "true";
-          mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
-          mobileMenu.classList.toggle("hidden");
-        });
+        if (mobileMenuButton && mobileMenu) {
+          // Toggle mobile menu
+          mobileMenuButton.addEventListener("click", () => {
+            const isExpanded =
+              mobileMenuButton.getAttribute("aria-expanded") === "true";
+            mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
+            mobileMenu.classList.toggle("hidden");
+          });
 
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.getElementsByTagName("a");
-        for (let i = 0; i < mobileMenuLinks.length; i++) {
-          mobileMenuLinks[i].addEventListener("click", () => {
-            mobileMenu.classList.add("hidden");
-            mobileMenuButton.setAttribute("aria-expanded", "false");
+          // Close mobile menu when clicking on a link
+          const mobileMenuLinks = mobileMenu.getElementsByTagName("a");
+          for (let i = 0; i < mobileMenuLinks.length; i++) {
+            mobileMenuLinks[i].addEventListener("click", () => {
+              mobileMenu.classList.add("hidden");
+              mobileMenuButton.setAttribute("aria-expanded", "false");
+            });
+          }
+
+          // Close mobile menu when clicking outside
+          document.addEventListener("click", (event) => {
+            const isClickInside =
+              mobileMenu.contains(event.target) ||
+              mobileMenuButton.contains(event.target);
+            if (!isClickInside && !mobileMenu.classList.contains("hidden")) {
+              mobileMenu.classList.add("hidden");
+              mobileMenuButton.setAttribute("aria-expanded", "false");
+            }
           });
         }
-
-        // Close mobile menu when clicking outside
-        document.addEventListener("click", (event) => {
-          const isClickInside =
-            mobileMenu.contains(event.target) ||
-            mobileMenuButton.contains(event.target);
-          if (!isClickInside && !mobileMenu.classList.contains("hidden")) {
-            mobileMenu.classList.add("hidden");
-            mobileMenuButton.setAttribute("aria-expanded", "false");
-          }
-        });
       };
     </script>
     <script type="application/ld+json">
-      {"@context": "https://schema.org", "@graph": [
-            {
-              "@type": "Person",
-              "@id": "https://www.psicologasarahtodaro.com.br/#beneficios",
-              "name": "Sarah Todaro",
-              "jobTitle": "Psicóloga",
-              "worksFor": {"@id": "https://www.psicologasarahtodaro.com.br/#terapia-online"},
-              "image": "https://www.psicologasarahtodaro.com.br/assets/images/sarah-logo-black-new-min.webp",
-              "description": "Psicóloga especialista em Terapia Cognitivo-Comportamental pela PUC",
-              "knowsAbout": ["Terapia Cognitivo-Comportamental", "Psicoterapia Online", "Saúde Mental"],
-              "award": ["Especialista em Terapia Cognitivo-Comportamental pela PUC"],
-              "identifier": {
-                "@type": "PropertyValue",
-                "name": "CRP",
-                "value": "06/169190"
-              }
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://www.psicologasarahtodaro.com.br/#beneficios",
+            "name": "Sarah Todaro",
+            "jobTitle": "Psicóloga",
+            "worksFor": {
+              "@id": "https://www.psicologasarahtodaro.com.br/#terapia-online"
+            },
+            "image": "https://www.psicologasarahtodaro.com.br/assets/images/sarah-logo-black-new-min.webp",
+            "description": "Psicóloga especialista em Terapia Cognitivo-Comportamental pela PUC",
+            "knowsAbout": [
+              "Terapia Cognitivo-Comportamental",
+              "Psicoterapia Online",
+              "Saúde Mental"
+            ],
+            "award": ["Especialista em Terapia Cognitivo-Comportamental pela PUC"],
+            "identifier": {
+              "@type": "PropertyValue",
+              "name": "CRP",
+              "value": "06/169190"
             }
-    </script>
-    <link rel="stylesheet" href="./public/style-117.css" />
+          }
+        ]
+      }
+    </script> 
+    <link rel="stylesheet" href="./style-124.css">
     <title>Psi Sarah Todaro</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
     <link
@@ -1832,6 +1844,10 @@
         const nextButton = document.getElementById("nextTestimonial");
         const carouselContainer = document.querySelector(".carousel-container");
 
+        if (!track || !slides.length || !prevButton || !nextButton || !carouselContainer) {
+          return; // Se algum elemento não existir, não inicializa o carrossel
+        }
+
         let currentIndex = 0;
         let slidesPerView = 1;
         const totalSlides = slides.length;
@@ -1926,46 +1942,50 @@
       const floatingButtons = document.querySelector(".fixed.bottom-8.right-8");
       const footer = document.querySelector("footer");
 
-      function checkScroll() {
-        const whatsappButton = floatingButtons.querySelector(
-          'a[href*="whatsapp"]'
-        );
+      if (backToTopButton && floatingButtons) {
+        function checkScroll() {
+          const whatsappButton = floatingButtons.querySelector(
+            'a[href*="whatsapp"]'
+          );
 
-        // Verifica se os botões devem aparecer baseado no scroll
-        if (window.scrollY > 300) {
-          backToTopButton.classList.remove("opacity-0", "invisible");
-          backToTopButton.classList.add("opacity-100", "visible");
-          whatsappButton.classList.remove("opacity-0", "invisible");
-          whatsappButton.classList.add("opacity-100", "visible");
-        } else {
-          backToTopButton.classList.remove("opacity-100", "visible");
-          backToTopButton.classList.add("opacity-0", "invisible");
-          whatsappButton.classList.remove("opacity-100", "visible");
-          whatsappButton.classList.add("opacity-0", "invisible");
-        }
+          if (!whatsappButton) return;
 
-        // Verifica se os botões devem ser escondidos quando chegar ao footer
-        if (footer) {
-          const footerTop = footer.getBoundingClientRect().top;
-          const windowHeight = window.innerHeight;
-
-          if (footerTop <= windowHeight) {
-            floatingButtons.classList.add("opacity-0", "invisible");
+          // Verifica se os botões devem aparecer baseado no scroll
+          if (window.scrollY > 300) {
+            backToTopButton.classList.remove("opacity-0", "invisible");
+            backToTopButton.classList.add("opacity-100", "visible");
+            whatsappButton.classList.remove("opacity-0", "invisible");
+            whatsappButton.classList.add("opacity-100", "visible");
           } else {
-            floatingButtons.classList.remove("opacity-0", "invisible");
+            backToTopButton.classList.remove("opacity-100", "visible");
+            backToTopButton.classList.add("opacity-0", "invisible");
+            whatsappButton.classList.remove("opacity-100", "visible");
+            whatsappButton.classList.add("opacity-0", "invisible");
+          }
+
+          // Verifica se os botões devem ser escondidos quando chegar ao footer
+          if (footer) {
+            const footerTop = footer.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (footerTop <= windowHeight) {
+              floatingButtons.classList.add("opacity-0", "invisible");
+            } else {
+              floatingButtons.classList.remove("opacity-0", "invisible");
+            }
           }
         }
-      }
 
-      window.addEventListener("scroll", checkScroll, { passive: true });
-      window.addEventListener("resize", checkScroll, { passive: true });
+        window.addEventListener("scroll", checkScroll, { passive: true });
+        window.addEventListener("resize", checkScroll, { passive: true });
 
-      backToTopButton.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
+        backToTopButton.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         });
-      });
+      }
     </script>
   </body>
 </html>
