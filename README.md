@@ -56,7 +56,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 ```
 /public
    /assets - Arquivos estáticos (imagens, etc)
-   /style-123.css - Arquivo de estilo gerado pelo Tailwind
+   /style-124.css - Arquivo de estilo gerado pelo Tailwind
 /src
    /style.css - Arquivo de estilo de entrada para Tailwind
 /index.html - Página principal do site
